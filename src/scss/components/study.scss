@@ -1,0 +1,15 @@
+.study {
+  &Card {
+    &Img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      margin-bottom: 40px;
+    }
+  }
+}
+.studyCardLink {
+  &:hover {
+    opacity: .8;
+  }
+}

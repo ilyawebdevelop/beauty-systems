@@ -1,0 +1,9 @@
+.garanty {
+  &Img {
+    height: auto;
+    width: 100%;
+    max-height: 640px;
+    object-fit: cover;
+    margin-bottom: 80px;
+  }
+}

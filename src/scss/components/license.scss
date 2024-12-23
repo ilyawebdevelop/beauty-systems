@@ -1,0 +1,47 @@
+.license {
+  &Center {
+
+
+    .container {
+      position: relative;
+
+      .row {
+        min-height: 560px;
+      }
+    }
+
+    &Img {
+      &W {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 570px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 472px;
+          height: 560px;
+          background: linear-gradient(90deg, #D6D6D6 0%, rgba(174, 177, 185, 0.00) 93.33%);
+        }
+      }
+
+      height: 100%;
+      object-fit: cover;
+      min-width: calc(60vw);
+      object-position: center;
+
+    }
+  }
+}
+
+.licenseCenterLight {
+  // position: absolute;
+  // left: calc(100vw - 60vw + 84px);
+  // width: 472px;
+  // height: 560px;
+  // background: linear-gradient(90deg, #D6D6D6 0%, rgba(174, 177, 185, 0.00) 93.33%);
+  // top: 0;
+}

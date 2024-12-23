@@ -1,0 +1,114 @@
+.reviews {
+  &Card {
+    &Content {
+      padding: 40px;
+      background-color: var(--white-04);
+      border-radius: 40px 40px 40px 2px;
+      border: 1px solid var(--Gray, #BCBCBC);
+      margin-bottom: 20px;
+      &--black {
+        background-color: var(--black);
+        border-color: var(--white-01);
+      }
+    }
+    &Img {
+      width: 120px;
+      height: 120px;
+      border-radius: 40px;
+      object-fit: cover;
+      &--round {
+        border-radius: 50%;
+      }
+    }
+    &Text {
+      // height: px;
+      overflow: hidden;
+      -webkit-line-clamp: 7;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+    }
+    &Author {
+      column-gap: 20px;
+    }
+    .button {
+      margin-bottom: -20px;
+    }
+  }
+}
+.caseItemImgW {
+  position: relative;
+  margin-bottom: 40px;
+  &:hover {
+    .caseVideoBtn {
+      background-color: rgba($color: #000000, $alpha: .8);
+    }
+  }
+}
+.caseItemImg {
+
+  img {
+    width: 100%;
+    height: 375px;
+    object-fit: cover;
+    border-radius: 40px;
+    border: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+  }
+}
+.caseItemDescr {
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+  margin-top: 20px;
+}
+.caseItemTitle {
+  display: block;
+  &:hover {
+    color: var(--blue);
+  }
+}
+
+.caseItem--sm {
+  .caseItemImg img{
+    border: 1px solid var(--White, #FFF);
+    height: 245px;
+    object-position: top;
+  }
+}
+.caseItemPerson{
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.reviewsCardSmTitle {
+  font-size: 20px;
+  line-height: 24px;
+}
+.reviewsCardNoImage {
+  width: 120px;
+  height: 120px;
+  color: var(--White, #FFF); 
+  font-size: 48px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.96px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--blue);
+  flex-shrink: 0;
+}
+.reviewFormW{
+  border: 1px solid rgba(255, 255, 255, 0.40);
+  background: var(--white-01, rgba(255, 255, 255, 0.10));  
+  padding: 80px 40px;
+}
+.inputWidth-50 {
+  width: 50%;
+}

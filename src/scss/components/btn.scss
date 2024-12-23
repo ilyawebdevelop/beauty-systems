@@ -1,0 +1,326 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 16px;
+  height: 56px;
+  padding-left: 26px;
+  padding-right: 26px;
+  border-radius: 28px;
+  min-width: 280px;
+  font-family: var(--font-family);
+  font-weight: 500;
+
+  &--md {
+    height: 48px;
+    padding-left: 45px;
+    padding-right: 45px;
+    min-width: unset;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+  }
+
+  &--sm {
+    height: 32px;
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &--blue {
+    background-color: var(--blue);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--tetriary);
+    }
+
+    &:disabled {
+      background: var(--white-02, rgba(255, 255, 255, 0.20));
+      color: var(--white-06, rgba(255, 255, 255, 0.60));
+
+      svg {
+        fill: var(--white-06, rgba(255, 255, 255, 0.60));
+      }
+    }
+
+    svg {
+      // stroke: #fff;
+      fill: #fff;
+    }
+  }
+
+  &--transparent {
+    background: var(--white-01, rgba(255, 255, 255, 0.10));
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--tetriary);
+    }
+
+    &:disabled {
+      background: var(--white-01, rgba(255, 255, 255, 0.10));
+      color: var(--white-02, rgba(255, 255, 255, 0.20));
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    color: var(--black);
+
+    &:hover {
+      background-color: var(--tetriary);
+      color: var(--white);
+    }
+
+    &:disabled {
+      background: var(--white-01, rgba(255, 255, 255, 0.10));
+      color: var(--white-02, rgba(255, 255, 255, 0.20));
+    }
+  }
+
+  &--black {
+    background-color: var(--black);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--white);
+      color: var(--black);
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--round {
+    width: 56px;
+    min-width: unset;
+    padding-left: 0;
+    padding-right: 0;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    &.button--transparent {
+      background: var(--white-01, rgba(255, 255, 255, 0.10));
+
+      svg {
+        fill: var(--white-06);
+        stroke: transparent;
+      }
+
+      &:hover {
+        svg {
+          fill: var(--white);
+        }
+      }
+
+      &:disabled {
+        svg {
+          fill: var(--white-02);
+        }
+      }
+    }
+
+    &.button--md {
+      width: 48px;
+    }
+  }
+
+  &--text {
+    min-width: unset;
+
+    &:hover {
+      color: var(--blue);
+    }
+
+    svg {
+      fill: var(--blue);
+      stroke: var(--blue);
+    }
+
+    &.text--white {
+      color: var(--white-06, rgba(255, 255, 255, 0.60));
+
+      &:hover {
+        color: #fff;
+
+        svg {
+          fill: var(--tetriary);
+          stroke: var(--tetriary);
+        }
+      }
+
+      &:disabled {
+        color: var(--white-02, rgba(255, 255, 255, 0.20));
+
+        svg {
+          fill: var(--white-01);
+          stroke: var(--white-01);
+        }
+      }
+
+      svg {
+        fill: var(--blue);
+        stroke: var(--blue);
+      }
+    }
+  }
+
+  &.min-w-unset {
+    min-width: unset;
+  }
+}
+
+.headerSearchBtn {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.tag {
+  transition: background-color .2s linear, color .2s linear;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0.24px;
+  width: fit-content;
+  padding-left: 12px;
+  padding-right: 12px;
+  &--sm-text {
+    @media(max-width: 991px){
+      background-color: transparent;
+      color: #fff;
+      font-size: 12px;
+      padding-top: 0;
+      padding-bottom: 0;
+      height: fit-content;
+      padding-left: 0!important;
+      padding-right: 0!important;
+      font-weight: 700;
+    }
+  }
+}
+
+.productCardBtn {
+  margin-left: auto;
+  height: 48px;
+  margin-top: 20px;
+}
+
+.coopBtn {
+  margin-top: 40px;
+  @media(max-width: 991px){
+    margin-top: 20px;
+  }
+  @media(max-width: 575px){
+    width: 100%;
+  }
+}
+
+.coopCalendarBtn {
+  img {
+    width: 16px;
+  }
+}
+
+.downloadBtn {
+  margin-top: 40px;
+}
+
+.productQuantityBtn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--white-01, rgba(255, 255, 255, 0.10));
+
+  svg {
+    transition: stroke .2s linear;
+  }
+
+  &:hover {
+    svg {
+      stroke: var(--white);
+    }
+  }
+}
+
+.priceCardBtn {
+  width: 50%;
+}
+
+.caseVideoBtn {
+  background-color: rgba($color: #000000, $alpha: .5);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color .2s linear;
+
+  img {
+    width: 27px;
+  }
+}
+
+.removeTextBtn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &.active {
+    display: flex;
+  }
+
+  svg {
+    fill: var(--blue);
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.removeSearchBtn {
+  width: 30px;
+  height: 30px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: rgba($color: #fff, $alpha: .4);
+  }
+}
+.header-fixed-icon{
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+  }
+}

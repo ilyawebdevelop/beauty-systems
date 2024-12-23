@@ -1,0 +1,33 @@
+.officeImg {
+  width: 100%;
+  height: auto;
+}
+.officeItemTitle {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.office {
+ .reqItemIcon {
+  position: relative;
+  top: 3px;
+ } 
+}
+.offceItemLink{
+  &:hover {
+    color: var(--blue);
+  }
+}
+.map {
+
+  iframe {
+    height: 540px;
+    width: 100%;
+  }
+}
+.mapAction iframe {  
+  pointer-events: none;
+}
+.mapIframe.onScroll {
+  pointer-events: all;
+}

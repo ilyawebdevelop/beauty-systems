@@ -1,0 +1,29 @@
+.cat {
+  &List {
+    column-gap: 4px;
+    row-gap: 10px;
+  }
+  &Item {
+    &.active {
+      .catLink {
+        background-color: var(--blue);
+        border-color: var(--blue);
+        pointer-events: none;
+      }
+    }
+  }
+  &Link {
+    color: #fff;
+    border-radius: 28px;
+    border: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    transition: background-color .2s linear, color .2s linear;
+    &:hover {
+      background-color: var(--blue);
+      border-color: var(--blue);
+    }
+  }
+}

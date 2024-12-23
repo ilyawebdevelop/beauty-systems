@@ -1,0 +1,21 @@
+.team {
+  &Card {
+    &Img {
+      width: 326px;
+      height: 326px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &Title {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    &Descr {
+      margin-top: 12px;
+    }
+  }
+}

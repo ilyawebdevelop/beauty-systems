@@ -1,0 +1,17 @@
+.aboutIntroImg {
+  height: 560px;
+  width: 100%;
+  object-fit: cover;
+}
+.downloadW {
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

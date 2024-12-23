@@ -1,0 +1,42 @@
+.req {
+  &W {
+    padding: 60px 40px;
+  }
+  &Item {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &L {
+      grid-column: 4 span;
+      border-bottom: 1px solid var(--Gray, #BCBCBC);
+      border-right: 1px solid var(--Gray, #BCBCBC);
+      padding-bottom: 24px;
+      padding-right: 50px;
+      padding-top: 24px;
+    }
+    &R {
+      grid-column: 8 span;
+      border-bottom: 1px solid var(--Gray, #BCBCBC);
+      padding-left: 80px;
+      padding-bottom: 24px;
+      padding-top: 24px;
+    }
+    &Title {
+      color: var(--Primary, #000);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 32px; 
+      text-transform: uppercase;      
+    }
+  }
+}
+.reqItemIcon {
+  width: 24px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.reqItemLink {
+  color: var(--blue);
+  &:hover {
+    color: var(--black);
+  }
+}

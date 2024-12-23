@@ -1,0 +1,322 @@
+.calendarEl {
+  .air-datepicker {
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: none;
+  }
+
+  .air-datepicker--navigation {
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  .air-datepicker-cell {
+    border-bottom: 1px solid rgba(224, 224, 224, 0.30);
+    border-radius: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 4px;
+    padding-left: 8px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    border-right: 1px solid rgba(224, 224, 224, 0.30);
+
+    &.-other-month- {
+      color: var(--gray2);
+    }
+
+    &.-day- {
+      pointer-events: none;
+    }
+
+    &.-selected- {
+      background: var(--white-005);
+      position: relative;
+      pointer-events: all;
+
+      &::before {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background: var(--blue) url('@img/icons/arrow-calendar.svg') no-repeat center center / 20px;
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+      }
+    }
+
+    &.cell-show-message {
+      background: var(--blue);
+
+      &.-focus- {
+        background-color: var(--blue);
+      }
+
+      &::before {
+        background: var(--black) url('@img/icons/arrow-calendar-show-message.svg') no-repeat center center / 24px;
+      }
+    }
+
+    &.-focus- {
+      background: var(--white-005);
+    }
+
+  }
+}
+
+.air-datepicker--content {
+  margin-top: 40px;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.air-datepicker-body--day-name {
+  justify-content: flex-start;
+  padding-top: 4px;
+  align-items: flex-start;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--Gray2, #5C5C5C);
+  font-weight: 700;
+  padding-left: 8px;
+  border-right: 1px solid rgba(224, 224, 224, 0.30);
+}
+
+.air-datepicker-nav--action {
+  &:hover {
+    background: var(--white-005);
+  }
+}
+
+.air-datepicker-body--day-names {
+  border-bottom: 1px solid rgba(224, 224, 224, 0.30);
+  height: 32px;
+  margin-bottom: 0;
+}
+
+.air-datepicker-nav {
+  border-color: transparent;
+}
+
+.air-datepicker-nav--title {
+  color: var(--gray);
+  font-weight: 500;
+
+  &:hover {
+    background: var(--white-005);
+  }
+
+  i {
+    color: var(--gray);
+  }
+}
+
+.calendarW {
+  position: relative;
+
+  .calendarTitle {
+    position: absolute;
+    top: 30px;
+    max-width: 500px;
+  }
+}
+
+.air-datepicker-body--cells.-days- {
+  grid-auto-rows: 80px;
+}
+
+.eventRegister {
+  padding-top: 110px;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(224, 224, 224, 0.30);
+}
+
+.calendarGrid {
+  display: flex;
+
+  .calendarCol {
+    width: 100%;
+  }
+
+  .eventRegister {
+    flex-shrink: 0;
+    width: 33%;
+  }
+}
+
+.eventRegisterPerson {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.eventRegisterTitle {
+  font-weight: 500;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding-right: 5px;
+}
+.smiSlide {
+  .eventCard {
+    height: 100%;
+  }
+}
+.eventCard {
+  background-color: var(--gray-bckg2);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--white-06, rgba(255, 255, 255, 0.60));
+  height: 100%;
+  &--gray {
+    background-color: var(--gray-bckg);
+  }
+
+  &Img {
+    &:hover {
+      opacity: .9;
+    }
+    img {
+      height: 320px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 40px;
+
+    }   
+  }
+  &Content {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &Title {   
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+    &:hover {
+      color: var(--blue);
+    }
+  }
+  &Descr {
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
+}
+.finishedCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &Img {
+    &:hover {
+      opacity: .9;
+    }
+    img {
+      border-radius: 40px;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+  &Content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &T {
+      padding-top: 24px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  &Title {
+    display: block;
+    &:hover {
+      color: var(--blue);
+    }
+  }
+  &Price {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &Action {
+    .button {
+      width: 50%;
+    }
+  }
+}
+.finishedSlide{
+  height: auto;
+}
+.whomCardTitle {
+  font-weight: 400;
+  max-width: 345px;
+  display: block;
+
+  &:hover {
+    color: var(--blue);
+  }
+}
+.whomCardImg:hover {
+  opacity: .8;
+}
+.whomCardImg img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+}
+.eventImage{
+  width: 100%;
+  height: auto;
+}
+.eventContent {
+  padding-left: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.eventContentAction {
+  margin-top: 80px;
+  .button {
+   padding-left: 28px;
+   padding-right: 28px;
+  }
+}
+.eventIntro {
+  margin-bottom: 130px;
+}
+.event {
+  .content--hidden {
+    -webkit-line-clamp: 13;
+  }
+  .content--hidden-list {
+    -webkit-line-clamp: 9;
+  }
+}
+.speakerImg{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 40px;
+}
