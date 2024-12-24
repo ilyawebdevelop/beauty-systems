@@ -16455,10 +16455,20 @@ h6--sm-h4,
 .modalHelp {
   width: 1080px;
 }
+@media (max-width: 991px) {
+  .modalHelp {
+    width: 500px;
+  }
+}
 .modalHelp .f-button.is-close-btn {
   top: 20px;
   right: 20px;
   color: var(--black);
+}
+@media (max-width: 991px) {
+  .modalHelp .f-button.is-close-btn {
+    color: #fff;
+  }
 }
 
 .modalHelpContent {
@@ -16466,11 +16476,31 @@ h6--sm-h4,
   color: #fff;
   padding: 60px;
 }
+@media (max-width: 991px) {
+  .modalHelpContent {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .modalHelpContent {
+    padding: 40px 30px;
+  }
+}
 .modalHelpContent .formBtn {
   width: 360px;
 }
+@media (max-width: 991px) {
+  .modalHelpContent .formBtn {
+    width: 100%;
+  }
+}
 .modalHelpContent .formInput {
   width: 360px;
+}
+@media (max-width: 991px) {
+  .modalHelpContent .formInput {
+    width: 100%;
+  }
 }
 
 .modalHelpImg {

@@ -55,11 +55,17 @@
 
 .modalHelp {
   width: 1080px;
+  @media(max-width: 991px){
+    width: 500px;
+  }
 
   .f-button.is-close-btn {
     top: 20px;
     right: 20px;
     color: var(--black);
+    @media(max-width: 991px){
+      color: #fff;
+    }
   }
 }
 
@@ -67,13 +73,25 @@
   width: 50%;
   color: #fff;
   padding: 60px;
+  @media(max-width: 991px){
+    width: 100%;
+  }
+  @media(max-width: 575px){
+    padding: 40px 30px;
+  }
 
   .formBtn {
     width: 360px;
+    @media(max-width: 991px){
+      width: 100%;
+    }
   }
 
   .formInput {
     width: 360px;
+    @media(max-width: 991px){
+      width: 100%;
+    }
   }
 }
 
