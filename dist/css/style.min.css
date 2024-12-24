@@ -15533,6 +15533,12 @@ table {
   font-size: 24px;
   line-height: 36px;
 }
+@media (max-width: 991px) {
+  .text-xl-sm-lg {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .text--xxl {
   font-size: 28px;
   line-height: 36px;
@@ -15542,6 +15548,12 @@ table {
   .text--xxl-sm-h6 {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .text--xxl-sm-xl {
+    font-size: 24px;
+    line-height: 36px;
   }
 }
 .text--white {
@@ -15567,6 +15579,12 @@ table {
 }
 .text--gray2 {
   color: var(--gray2);
+}
+
+@media (max-width: 991px) {
+  .fw-medium-sm-normal {
+    font-weight: 400 !important;
+  }
 }
 
 a.text--white-06:hover {
@@ -15798,8 +15816,18 @@ h6--sm-h4,
 .content--pr {
   padding-right: 40px;
 }
+@media (max-width: 991px) {
+  .content--pr-sm-0 {
+    padding-right: 0;
+  }
+}
 .content--pl {
   padding-left: 40px;
+}
+@media (max-width: 991px) {
+  .content--pl-sm-0 {
+    padding-left: 0;
+  }
 }
 .content.text--white > a {
   display: inline;
@@ -15949,6 +15977,27 @@ h6--sm-h4,
   width: 100%;
   object-fit: cover;
   margin-top: 40px;
+}
+@media (max-width: 1199px) {
+  .certImg {
+    height: 300px;
+  }
+}
+@media (max-width: 991px) {
+  .certImg {
+    margin-top: 20px;
+    height: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .certImg {
+    height: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .certImg {
+    height: 55vw;
+  }
 }
 
 .text-justify {
@@ -16215,6 +16264,21 @@ h6--sm-h4,
 
 .downloadBtn {
   margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .downloadBtn {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    min-width: unset;
+  }
+}
+@media (max-width: 575px) {
+  .downloadBtn {
+    width: 100%;
+  }
 }
 
 .productQuantityBtn {
@@ -16500,17 +16564,15 @@ h6--sm-h4,
   padding-top: 40px;
   padding-bottom: 30px;
 }
-@media (max-width: 767px) {
-  .breadcrumbs {
-    padding-top: 24px;
-    padding-bottom: 40px;
+@media (max-width: 991px) {
+  .breadcrumbsSect {
+    margin-top: 60px;
   }
 }
 @media (max-width: 575px) {
   .breadcrumbs {
     overflow-x: scroll;
     padding-bottom: 20px;
-    margin-bottom: 20px;
     margin-left: -15px;
     padding-left: 15px;
     margin-right: -15px;
@@ -16722,6 +16784,9 @@ h6--sm-h4,
     width: 130px;
   }
 }
+.header .header-fixed-icon svg {
+  fill: #000;
+}
 .header--white {
   border-bottom: 1px solid var(--white-02, rgba(255, 255, 255, 0.2));
 }
@@ -16734,8 +16799,11 @@ h6--sm-h4,
 .header--white .headerSearchBtn svg {
   stroke: #fff;
 }
-.header .header-fixed-icon svg {
-  fill: #000;
+.header--white .header-fixed-icon svg {
+  fill: #fff;
+}
+.header--white .hamburger div {
+  background: #fff;
 }
 
 .header-fixed {
@@ -17255,6 +17323,33 @@ h6--sm-h4,
     grid-column: 12 span;
   }
 }
+@media (max-width: 575px) {
+  .catalogGrid .productCard--sm {
+    grid-column: 6 span;
+  }
+}
+.catalogGrid .productCard--sm:nth-child(even) {
+  margin-left: 20px;
+}
+@media (max-width: 350px) {
+  .catalogGrid .productCard--sm:nth-child(even) {
+    margin-left: 10px;
+  }
+}
+.catalogGrid .productCard--sm:nth-child(odd) {
+  margin-right: 20px;
+}
+@media (max-width: 350px) {
+  .catalogGrid .productCard--sm:nth-child(odd) {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .catalogGrid--sm {
+    column-gap: 0;
+    row-gap: 40px;
+  }
+}
 .catalogSlider .navArrow {
   width: 32px;
   height: 32px;
@@ -17364,6 +17459,7 @@ h6--sm-h4,
 .productCardTitle a {
   display: block;
   width: fit-content;
+  word-break: break-word;
 }
 .productCardDescr {
   margin-top: 20px;
@@ -17684,6 +17780,11 @@ h6--sm-h4,
   object-fit: cover;
   height: 240px;
 }
+@media (max-width: 575px) {
+  .blogCardImg img {
+    border-radius: 24px;
+  }
+}
 @media (max-width: 991px) {
   .blogCard .h6 {
     text-transform: uppercase;
@@ -17786,6 +17887,11 @@ h6--sm-h4,
 @media (max-width: 575px) {
   .advSect {
     background-color: #E7E7E7;
+  }
+}
+@media (max-width: 575px) {
+  .advSect--sm-pt-0 {
+    padding-top: 0;
   }
 }
 .advL {
@@ -17957,6 +18063,21 @@ h6--sm-h4,
   width: 100%;
   object-fit: cover;
 }
+@media (max-width: 1400px) {
+  .aboutIntroImg {
+    height: 500px;
+  }
+}
+@media (max-width: 991px) {
+  .aboutIntroImg {
+    height: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .aboutIntroImg {
+    height: 80vw;
+  }
+}
 
 .downloadW {
   min-height: 400px;
@@ -17970,6 +18091,71 @@ h6--sm-h4,
   padding-top: 40px;
   padding-bottom: 40px;
 }
+@media (max-width: 767px) {
+  .downloadW {
+    justify-content: flex-start;
+    min-height: 360px;
+    padding-left: 0;
+    align-items: center;
+    background-position: bottom;
+    background-image: none !important;
+    padding-top: 0;
+    position: relative;
+    justify-content: flex-end;
+    min-height: 380px;
+    background: linear-gradient(180deg, #F6F6F6 0%, #F7F7F7 49%, #F7F7F7 58.5%, #F2F0F1 71%, #ECE8E7 85%, #EBE7E6 100%) !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .downloadW {
+    min-height: 92vw;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutIntro {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .aboutIntroText {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .downloadContent {
+    max-width: 300px !important;
+  }
+}
+
+.downloadHead {
+  background-color: #f6f6f6;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+}
+.downloadHead .h2 {
+  color: var(--black);
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.downloadImageSm {
+  width: 100%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: calc(100% - 120px);
+  object-fit: cover;
+}
 
 .teamCardImg {
   width: 326px;
@@ -17979,12 +18165,58 @@ h6--sm-h4,
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 1400px) {
+  .teamCardImg {
+    height: 264px;
+  }
+}
+@media (max-width: 1199px) {
+  .teamCardImg {
+    height: 298px;
+  }
+}
+@media (max-width: 991px) {
+  .teamCardImg {
+    height: 326px;
+  }
+}
+@media (max-width: 767px) {
+  .teamCardImg {
+    height: 180px;
+    width: 180px;
+  }
+}
+@media (max-width: 420px) {
+  .teamCardImg {
+    width: 50vw;
+    height: 39vw;
+  }
+}
 .teamCardTitle {
   margin-top: 40px;
   text-align: center;
 }
+@media (max-width: 767px) {
+  .teamCardTitle {
+    margin-top: 16px;
+    font-weight: 400 !important;
+  }
+}
 .teamCardDescr {
   margin-top: 12px;
+}
+@media (max-width: 767px) {
+  .teamCardDescr {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+  }
+}
+@media (max-width: 575px) {
+  .teamSlider-sm-pr {
+    padding-right: 20px;
+    overflow: visible;
+  }
 }
 
 @media (max-width: 575px) {
@@ -18012,11 +18244,31 @@ h6--sm-h4,
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 1199px) {
+  .smiCardContent {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+  }
+}
 .smiCardImg:hover {
   opacity: 0.85;
 }
 .smiCardImg img {
   border-radius: 40px;
+}
+@media (max-width: 575px) {
+  .smiCardImg img {
+    border-radius: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .smiCardTitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-weight: 500;
+  }
 }
 .smiCardTitle:hover {
   color: var(--blue);

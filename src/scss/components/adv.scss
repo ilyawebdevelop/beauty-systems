@@ -3,6 +3,11 @@
     @media(max-width: 575px){
       background-color: #E7E7E7;
     }
+    &--sm-pt-0 {
+      @media(max-width: 575px){
+        padding-top: 0;
+      }
+    }
   }
   &L {
     padding-top: 80px;

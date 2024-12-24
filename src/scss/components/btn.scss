@@ -239,6 +239,17 @@
 
 .downloadBtn {
   margin-top: 40px;
+  @media(max-width: 767px){
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    min-width: unset;
+  }
+  @media(max-width: 575px){
+    width: 100%;
+  }
 }
 
 .productQuantityBtn {

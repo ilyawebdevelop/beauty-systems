@@ -35,6 +35,29 @@
         grid-column: 12 span;
       }
     }
+    .productCard--sm {
+      @media(max-width: 575px){
+        grid-column: 6 span;
+      }
+      &:nth-child(even){
+        margin-left: 20px;
+        @media(max-width: 350px){
+          margin-left: 10px;
+        }
+      }
+      &:nth-child(odd){
+        margin-right: 20px;
+        @media(max-width: 350px){
+          margin-right: 10px;
+        }
+      }
+    }
+    &--sm {
+      @media(max-width: 575px){
+       column-gap: 0;
+       row-gap: 40px;
+      }
+    }
   }
 
   &Slider {
@@ -161,6 +184,7 @@
     a {
       display: block;
       width: fit-content;
+      word-break: break-word;
     }
   }
 

@@ -20,12 +20,19 @@
 <header class="header header--white" id="header">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
-      <a href="#" class="headerLogo logo">
-        <img src="img/admin/logo/logo-white.svg" alt="logo">
-      </a>
-      <div class="d-flex align-items-center gap-4">
+      <div class="d-flex align-items-center gap-3 gap-sm-4">
+        <div class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <a href="#" class="headerLogo logo">
+          <img src="img/admin/logo/logo-white.svg" alt="logo">
+        </a>
+      </div>
+      <div class="d-flex align-items-center gap-3 gap-xxl-4">
         <nav class="headerNav nav">
-          <ul class="d-flex gap-4">
+          <ul class="d-flex gap-2 gap-xl-3 gap-xxl-4">
             <li><a href="#">О компании</a></li>
             <li><a href="#">Оборудование</a></li>
             <li><a href="#">Мероприятия</a></li>
@@ -36,11 +43,23 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <button class="headerSearchBtn">
-          <svg>
-            <use xlink:href="img/icons/icons.svg#search-btn"></use>
-          </svg>
-        </button>
+        <div class="d-flex align-items-center gap-3 gap-sm-4">
+          <button class="headerSearchBtn header-action-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#search-btn"></use>
+            </svg>
+          </button>
+          <a class="header-fixed-icon d-block d-lg-none" href="tel:84992168208">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#phone"></use>
+            </svg>
+          </a>
+          <a class="header-fixed-icon d-block d-lg-none" href="#">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#cart"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -50,7 +69,7 @@
   <div class="container">
     <div class="d-flex gap-3 align-items-center justify-content-between">
       <div class="d-flex align-items-center gap-3 gap-sm-4">
-        <div class="hamburger" id="toggle">
+        <div class="hamburger">
           <div class="top-bun"></div>
           <div class="meat"></div>
           <div class="bottom-bun"></div>
@@ -93,7 +112,7 @@
         </a>
       </div>
       <div class="d-flex align-items-center gap-3 gap-sm-4">
-        <button class="header-fixed-icon">
+        <button class="header-fixed-icon header-action-btn header-fixed-search-btn">
           <svg>
             <use xlink:href="img/icons/icons.svg#search-btn"></use>
           </svg>
@@ -113,8 +132,152 @@
     </div>
   </div>
 </div>
+
+<div class="headerMobMenu">
+  <div class="headerMobMenuHead">
+    <div class="container">
+      <div class="d-flex justify-content-between py-4">
+        <button class="headerNavCloseBtn" type="button">
+          <img src="img/icons/remove-white.svg" alt="close">
+        </button>
+        <div class="d-flex align-items-center gap-3 gap-sm-4">
+          <button class="header-fixed-icon headerMobMenu-search-btn header-action-btn">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#search-btn"></use>
+            </svg>
+          </button>
+          <a class="header-fixed-icon d-block d-lg-none" href="tel:84992168208">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#phone"></use>
+            </svg>
+          </a>
+          <a class="header-fixed-icon d-block d-lg-none" href="#">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#cart"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="headerMobMenuNavW">
+    <div class="container">
+      <nav class="headerMobMenuNav">
+        <ul>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Оборудование</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">Учебный центр</a></li>
+          <li><a href="#">Сервисный центр</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="headerMobMenuContacts">
+    <div class="container">
+      <a href="#" class="logo headerLogo mb-4 mx-auto">
+        <img src="img/admin/logo/logo-white.svg" alt="logo">
+      </a>
+      <a href="tel:84992168208" class="phone mb-3 pb-1">
+        8 (499) 216-82-08
+      </a>
+      <a href="tel:84992168208" class="mail mb-3 pb-1">
+        info@beautysystems.ru
+      </a>
+      <a href="#" class="orderBtn mb-3 pb-1" data-fancybox data-src="#modalOrder">
+        Заказать обратный звонок
+      </a>
+      <div class="socials">
+        <ul class="d-flex justify-content-center gap-3">
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/vk.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/telegram.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/dzen.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/youtube.svg" alt="icon">
+            </a>
+          </li>
+          <li>
+            <a class="d-flex gap-3 align-items-center footerSocialsLink" href="#" target="_blank">
+              <img src="img/admin/socials/dzen.svg" alt="icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="headerSearch">
+  <div class="container">
+    <div class="searchInputW">
+      <input class="search--radius" type="search" placeholder="Поиск">
+      <div class="searchAction d-flex align-items-center">
+        <button class="removeTextBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#remove"></use>
+          </svg>
+        </button>
+        <button class="removeSearchBtn">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#search"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="menuMobileFixed">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#catalog"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Каталог</span>
+      </a>
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#events"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Мероприятия</span>
+      </a>
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#study"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Обучение</span>
+      </a>
+      <a href="#" class="menuMobileFixedBtn">
+        <svg>
+          <use xlink:href="img/icons/icons.svg#service"></use>
+        </svg>
+        <span class="menuMobileFixedBtnText">Сервис</span>
+      </a>
+    </div>
+  </div>
+</div>
 		<main class="main">
-			<section class="mainCat mainCat--def">
+			<section class="mainCat mainCat--def d-none d-lg-block">
   <div class="container">
     <div class="d-flex gap-2 justify-content-between">
       <a class="button button--text px-0 text--white mainCatLink" href="#">
@@ -191,16 +354,16 @@
           </ul>
         </div>
     
-        <h1 class="h1 text-uppercase">
+        <h1 class="h1 text-uppercase mb-0">
           Оборудование
         </h1>
       </div>
     </div>
   </div>
 </section>
-			<section class="catalogSect sect">
+			<section class="sect">
   <div class="container">
-    <h2 class="h3 text-uppercase fw-bold text-start" style="max-width: 1130px;">
+    <h2 class="h3 text-uppercase fw-bold text-start mb-0" style="max-width: 1130px;">
       профессиональное оборудование
     </h2>
     <div class="catalogGrid pb-4">
@@ -404,184 +567,186 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--black">
+      <div class="productCard productCard--black d-none d-sm-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-6.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-4.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-6.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-4.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 h4--sm-h2">
-        <a href="#">EINXEL PLUS</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Фракционный микроигольчатый аппарат
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 h4--sm-h2">
+              <a href="#">EINXEL PLUS</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Фракционный микроигольчатый аппарат
+            </div>
+            <p class="productCardDescr text--xs">
+              Точные иглы различной длины и прямое применение RF-энергии, Повышает упругость кожи, устраняет морщины и
+              стимулирует выработку эластина
+            </p>
+          </div>
+          <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Точные иглы различной длины и прямое применение RF-энергии, Повышает упругость кожи, устраняет морщины и стимулирует выработку эластина
-      </p>
-    </div>   
-    <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--black">
+      <div class="productCard productCard--black d-none d-sm-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-7.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-4.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-7.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-4.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 h4--sm-h2">
-        <a href="#">WINBACK 3SE/1SE</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Аппарат для текар-терапии
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 h4--sm-h2">
+              <a href="#">WINBACK 3SE/1SE</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Аппарат для текар-терапии
+            </div>
+            <p class="productCardDescr text--xs">
+              Мировой эталон в мире реабилитации, эстетической косметологии и гинекологии, Расширенный протокол терапии
+            </p>
+          </div>
+          <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Мировой эталон в мире реабилитации, эстетической косметологии и гинекологии, Расширенный протокол терапии
-      </p>
-    </div>   
-    <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--black">
+      <div class="productCard productCard--black d-none d-sm-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-8.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-4.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-8.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-4.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 h4--sm-h2">
-        <a href="#">U-one</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Аппарат для Hi-Fu
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 h4--sm-h2">
+              <a href="#">U-one</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Аппарат для Hi-Fu
+            </div>
+            <p class="productCardDescr text--xs">
+              Новая концепция ультразвуковой технологии для подтяжки кожи, Точная фокусировка энергии генерирует тепло
+              65-100°C
+              для воздействия на ткани
+            </p>
+          </div>
+          <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Новая концепция ультразвуковой технологии для подтяжки кожи, Точная фокусировка энергии генерирует тепло 65-100°C
-        для воздействия на ткани
-      </p>
-    </div>   
-    <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--black">
+      <div class="productCard productCard--black d-none d-lg-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-9.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-4.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-9.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-4.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 h4--sm-h2">
-        <a href="#">MYSTIC</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Неодимовый лазер
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 h4--sm-h2">
+              <a href="#">MYSTIC</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Неодимовый лазер
+            </div>
+            <p class="productCardDescr text--xs">
+              Nd-yag лазер для удаления татуировок, перманентного макияжа и карбонового пилинга. Высокая мощность и
+              эффективность.
+            </p>
+          </div>
+          <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Nd-yag лазер для удаления татуировок, перманентного макияжа и карбонового пилинга. Высокая мощность и
-        эффективность.
-      </p>
-    </div>
-    <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
     </div>
 
     <button class="button button--blue mt-5 mx-auto">
@@ -593,13 +758,13 @@
 
   </div>
 </section>
-			<section class="catalogSect sect bg--gray">
+			<section class="sect bg--gray">
   <div class="container">
     <h2 class="h3 text-uppercase fw-bold text-start text--black" style="max-width: 1130px;">
       Базовое оборудование
     </h2>
-    <div class="catalogGrid pb-4">
-      <div class="productCard productCard--white">
+    <div class="catalogGrid catalogGrid--sm pb-4">
+      <div class="productCard productCard--white productCard--sm">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -622,13 +787,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
+      <h4 class="productCardTitle h4 text--black text-uppercase">
         <a href="#">Кресло Атисмед</a>
       </h4>
       <div class="productCardSubtitle h6">
         Косметологические кресло
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Электрическое кресло с возможностью выбора между 3 или 4 моторами, обеспечивающими точную настройку каждой
         секции для оптимального размещения клиента.
       </p>
@@ -641,7 +806,7 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -658,13 +823,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
+      <h4 class="productCardTitle h4 text--black text-uppercase">
         <a href="#">Лампа-лупа АтисМед</a>
       </h4>
       <div class="productCardSubtitle h6">
         Лампа-лупа косметологическая
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Бестеневая увеличительная лампа с подсветкой из 60 светодиодов от российской компании “АтисМед” для оснащения
         медицинских и косметологических кабинетов.
       </p>
@@ -677,7 +842,7 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -694,13 +859,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4">
+      <h4 class="productCardTitle h4 text-uppercase">
         <a href="#">Кушетка АтисМед</a>
       </h4>
       <div class="productCardSubtitle h6">
         Массажная кушетка
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Кушетка оснащена двумя электроприводами, регулирующими высоту кресла и спинку. Грузоподъемность до 350 кг.
         Увеличенная ширина кушетки 80 см
       </p>
@@ -713,7 +878,7 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -736,13 +901,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
+      <h4 class="productCardTitle h4 text--black text-uppercase">
         <a href="#">Вапоризатор АтисМед</a>
       </h4>
       <div class="productCardSubtitle h6">
         Косметологические кресло
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Вапоризатор косметологический для лица
       </p>
     </div>
@@ -754,205 +919,208 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm d-none d-sm-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-5.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-5.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Дерматоскоп KaWe</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Профессиональный дерматоскоп нового поколения
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Дерматоскоп KaWe</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Профессиональный дерматоскоп нового поколения
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Базовый аппарат для медицинских и косметологических центров, который помогает специалисту детально
+              исследовать
+              кожные покровы для постановки диагноза.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Базовый аппарат для медицинских и косметологических центров, который помогает специалисту детально исследовать
-        кожные покровы для постановки диагноза.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm d-none d-sm-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-6.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-6.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">РБ-18</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Рециркулятор бактерицидный для помещений
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">РБ-18</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Рециркулятор бактерицидный для помещений
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Облучатель закрытого типа для оснащения медицинского или косметологического кабинета. Безопасная для людей
+              технология очистки убивает до 99,9% вирусов.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Облучатель закрытого типа для оснащения медицинского или косметологического кабинета. Безопасная для людей
-        технология очистки убивает до 99,9% вирусов.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm d-none d-md-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-7.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-7.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Столик-тумба СП-М</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Столик косметологический передвижной без ящика
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Столик-тумба СП-М</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Столик косметологический передвижной без ящика
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Прочный устойчивый столик с металлическими боковыми вставками имеет колесики для быстрого перемещения, а
+              также крепление для лампы-лупы «АтисМед».
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Прочный устойчивый столик с металлическими боковыми вставками имеет колесики для быстрого перемещения, а также крепление для лампы-лупы «АтисМед».
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm d-none d-md-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-8.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-3.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-8.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-3.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Стул со спинкой Атис Стрим-С</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Стул для оснащения кабинета косметолога
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Стул со спинкой Атис Стрим-С</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Стул для оснащения кабинета косметолога
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Эргономичный стул для комфортной длительной работы специалиста. Стул оснащен бесшумными маневренными
+              колесами, регулировкой высоты и поддержкой поясницы.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Эргономичный стул для комфортной длительной работы специалиста. Стул оснащен бесшумными маневренными колесами, регулировкой высоты и поддержкой поясницы.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--white productCard--sm d-none d-lg-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-9.png" alt="image">
-      </a>    
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-9.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Стерилизатор Ферропласт</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Стерилизатор воздушный медицинский
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Стерилизатор Ферропласт</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Стерилизатор воздушный медицинский
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Стерилизационная камера предназначена для обработки медицинского и маникюрного инструмента и прочих
+              теплоустойчивых косметологических аксессуаров.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Стерилизационная камера предназначена для обработки медицинского и маникюрного инструмента и прочих
-        теплоустойчивых косметологических аксессуаров.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
     </div>
 
     <button class="button button--blue mt-5 mx-auto">
@@ -964,13 +1132,13 @@
 
   </div>
 </section>
-			<section class="catalogSect sect">
+			<section class="sect">
   <div class="container">
-    <h2 class="h3 text-uppercase fw-bold text-start" style="max-width: 1130px;">
+    <h2 class="h3 text-uppercase fw-bold text-start mb-0" style="max-width: 1130px;">
       Профессиональная косметика
     </h2>
-    <div class="catalogGrid pb-4">
-      <div class="productCard productCard--black">
+    <div class="catalogGrid catalogGrid--sm pb-4">
+      <div class="productCard productCard--black productCard--sm">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -987,13 +1155,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4">
+      <h4 class="productCardTitle h4 text-uppercase">
         <a href="#">Токопроводящий крем</a>
       </h4>
       <div class="productCardSubtitle h6">
         Крем для проведения текар-терапии на аппарате Winback
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Контактный восстанавливающий крем гипоаллергенный, подходит для всех типов кожи. Усиливает эффект терапии,
         обладает увлажняющим и успокаивающим эффектом.
       </p>
@@ -1006,7 +1174,7 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--black">
+      <div class="productCard productCard--black productCard--sm">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -1023,13 +1191,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4">
+      <h4 class="productCardTitle h4 text-uppercase">
         <a href="#">Питательный раствор EYESEL</a>
       </h4>
       <div class="productCardSubtitle h6">
         Раствор для проведения процедуры газожидкостного пилинга
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Раствор усиливает действие процедуры, увлажняет и восстанавливает кожу. Также может использоваться для
         лимфодренажного и моделирующего массажа.
       </p>
@@ -1042,42 +1210,43 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--black">
+      <div class="productCard productCard--black productCard--sm d-none d-lg-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/kosmetika-3.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/kosmetika-3.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4">
-        <a href="#">Jojoba face & body scrub</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Гель-скраб для лица и тела
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text-uppercase">
+              <a href="#">Jojoba face & body scrub</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Гель-скраб для лица и тела
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Средство содержит частицы жожоба, которые усиливают массажный эффект. Во время процедуры микрогранулы
+              постепенно
+              растворяются, глубоко увлажняя кожу.
+            </p>
+          </div>
+          <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Средство содержит частицы жожоба, которые усиливают массажный эффект. Во время процедуры микрогранулы постепенно
-        растворяются, глубоко увлажняя кожу.
-      </p>
-    </div>
-    <button class="productCardBtn button button--text px-0 text--white fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
     </div>
 
     <button class="button button--blue mt-5 mx-auto d-flex d-lg-none">
@@ -1089,13 +1258,13 @@
 
   </div>
 </section>
-			<section class="catalogSect sect bg--gray">
+			<section class="sect bg--gray">
   <div class="container">
-    <h2 class="h3 text-uppercase fw-bold text-start text--black" style="max-width: 1130px;">
+    <h2 class="h3 text-uppercase fw-bold text-start text--black mb-0" style="max-width: 1130px;">
       Расходные материалы
     </h2>
     <div class="catalogGrid pb-4">
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -1118,13 +1287,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
+      <h4 class="productCardTitle h4 text--black text-uppercase">
         <a href="#">Очки для Diode Laser</a>
       </h4>
       <div class="productCardSubtitle h6">
         Защитные очки для косметолога и пациента
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Очки защищают глаза пациента и специалиста при работе на диодном лазере с длиной волны 740-850 нм. Изготовлены из высокопрочного пластика.
       </p>
     </div>
@@ -1136,7 +1305,7 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -1159,13 +1328,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
+      <h4 class="productCardTitle h4 text--black text-uppercase">
         <a href="#">Очки для IPL</a>
       </h4>
       <div class="productCardSubtitle h6">
         Защитные очки для косметолога и пациента
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Очки защищают глаза пациента и специалиста при работе на аппарате для фототерапии с длиной волны 200-1400 нм. Изготовлены из высокопрочного пластика.
       </p>
     </div>
@@ -1177,7 +1346,7 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -1200,13 +1369,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
+      <h4 class="productCardTitle h4 text--black text-uppercase">
         <a href="#">Очки для ND-YAG</a>
       </h4>
       <div class="productCardSubtitle h6">
         Защитные очки для косметолога и пациента
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Очки защищают глаза пациента и специалиста при работе на ND-YAG лазере с длиной волны 532-1064 нм. Изготовлены
         из высокопрочного пластика.
       </p>
@@ -1219,7 +1388,7 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white">
 
   <div class="swiper productCardSlider">
     <div class="swiper-wrapper">
@@ -1242,13 +1411,13 @@
 
   <div class="productCardContent">
     <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
+      <h4 class="productCardTitle h4 text--black text-uppercase">
         <a href="#">Насадка для манипулы In-Motion D1/D2</a>
       </h4>
       <div class="productCardSubtitle h6">
         Дополнительная насадка для манипулы диодного лазера
       </div>
-      <p class="productCardDescr text--xs">
+      <p class="productCardDescr text--xs d-none d-sm-block">
         Насадка дает возможность проводить процедуру лазерной эпиляции в труднодоступных местах. Не имеет системы охлаждения.
       </p>
     </div>
@@ -1260,211 +1429,216 @@
     </button>
   </div>
 </div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white d-none d-sm-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/rashod-5.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/rashod-5.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Махровый чехол на косметологическое кресло</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Чехол подходит для механического кресла «АтисМед Прайм»
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Махровый чехол на косметологическое кресло</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Чехол подходит для механического кресла «АтисМед Прайм»
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Чехол защитит ваше кресло от механических повреждений, продлит срок его службы и обеспечит дополнительный
+              комфорт пациентам. Изготовлен из медицинской ткани.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Чехол защитит ваше кресло от механических повреждений, продлит срок его службы и обеспечит дополнительный комфорт пациентам. Изготовлен из медицинской ткани.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white d-none d-sm-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/rashod-6.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/rashod-6.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Насадки Antige</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Насадки для фракционного микроигольчатого аппарата Antige
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Насадки Antige</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Насадки для фракционного микроигольчатого аппарата Antige
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              В комплекте 2 типа насадок: инвазивная для RF-лифтинга в глубоких слоях кожи и неинвазивная для работы с
+              поверхностными слоями эпидермиса.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        В комплекте 2 типа насадок: инвазивная для RF-лифтинга в глубоких слоях кожи и неинвазивная для работы с поверхностными слоями эпидермиса.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white d-none d-md-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/rashod-7.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/rashod-7.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Водяные фильтры</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Водяные фильтры для In-Motion D1/D2
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Водяные фильтры</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Водяные фильтры для In-Motion D1/D2
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Фильтры для диодных лазеров предназначены для грубой и мягкой очистки воды. Для корректной работы
+              оборудования необходима регулярная замена.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Фильтры для диодных лазеров предназначены для грубой и мягкой очистки воды. Для корректной работы оборудования необходима регулярная замена.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white d-none d-md-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/rashod-8.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/rashod-8.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Воздушные фильтры</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Воздушные фильтры AnchorFree V8C1/V8+
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Воздушные фильтры</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Воздушные фильтры AnchorFree V8C1/V8+
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Фильтры для аппаратов коррекции фигуры с высокой фильтрационной эффективностью. Для корректной работы
+              оборудования необходима регулярная замена.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Фильтры для аппаратов коррекции фигуры с высокой фильтрационной эффективностью. Для корректной работы оборудования необходима регулярная замена.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-      <div class="productCard productCard--white">
+      <div class="productCard productCard--sm productCard--white d-none d-lg-flex">
 
-  <div class="swiper productCardSlider">
-    <div class="swiper-wrapper">
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/rashod-9.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/basic-1.png" alt="image">
-      </a>
-      <a class="swiper-slide productCardSlide" href="#">
-        <img src="img/admin/product/image-2.png" alt="image">
-      </a>
-    </div>
-    <div class="swiper-pagination"></div>
+        <div class="swiper productCardSlider">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/rashod-9.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/basic-1.png" alt="image">
+            </a>
+            <a class="swiper-slide productCardSlide" href="#">
+              <img src="img/admin/product/image-2.png" alt="image">
+            </a>
+          </div>
+          <div class="swiper-pagination"></div>
 
-  </div>
+        </div>
 
-  <div class="productCardContent">
-    <div class="productCardContentT">
-      <h4 class="productCardTitle h4 text--black">
-        <a href="#">Клейкие электроды Winback</a>
-      </h4>
-      <div class="productCardSubtitle h6">
-        Электроды для проведения процедур текар-терапии
+        <div class="productCardContent">
+          <div class="productCardContentT">
+            <h4 class="productCardTitle h4 text--black text-uppercase">
+              <a href="#">Клейкие электроды Winback</a>
+            </h4>
+            <div class="productCardSubtitle h6">
+              Электроды для проведения процедур текар-терапии
+            </div>
+            <p class="productCardDescr text--xs d-none d-sm-block">
+              Упаковка электродов рассчитана на 5 пациентов и 25 применений, соответственно. Применяются в протоколах
+              реабилитации на аппарате Winback.
+            </p>
+          </div>
+          <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
+            узнать больше
+            <svg style="width: 12px; height: 12px;">
+              <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <p class="productCardDescr text--xs">
-        Упаковка электродов рассчитана на 5 пациентов и 25 применений, соответственно. Применяются в протоколах реабилитации на аппарате Winback.
-      </p>
-    </div>
-    <button class="productCardBtn button text--black button--text px-0 fw-normal text--xs">
-      узнать больше
-      <svg style="width: 12px; height: 12px;">
-        <use xlink:href="img/icons/icons.svg#arrow-btn"></use>
-      </svg>
-    </button>
-  </div>
-</div>   
     </div>
 
     <button class="button button--blue mt-5 mx-auto">
@@ -1476,26 +1650,26 @@
 
   </div>
 </section>
-			<section class="sect pb-4">
+			<section class="sect pb-4 advSect advSect--sm-pt-0">
   <div class="container">
 
     <div class="row">
       <div class="col">
         <div class="advW" style="background-image: url('img/admin/adv/adv-bg.jpg');">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-xl-6">
               <div class="advL">
-                <h3 class="h3 text--black text-uppercase mb-5">
+                <h3 class="h3 text--black text-uppercase mb-4 pb-3 pb-md-0 mb-xxl-5 text-center text-xl-start">
                   С нами приятно работать
                 </h3>
-                <div class="advRow mb-5">
-                  <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="advRow mb-4 pb-0 pb-dm-3 mb-xxl-5 pb-xl-0">
+                  <div class="d-flex flex-column flex-md-row align-items-center gap-3 mb-4 justify-content-center justify-content-xl-start">
                     <img src="img/icons/protect.svg" alt="icon">
                     <div class="advRowTitle">
                       Законность, безопасность и эффективность:
-                    </div>        
+                    </div>
                   </div>
-  
+
                   <div class="content">
                     <ul>
                       <li>
@@ -1512,16 +1686,16 @@
                       </li>
                     </ul>
                   </div>
-  
+
                 </div>
-                <div class="advRow mb-5">
-                  <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="advRow mb-4 pb-0 pb-dm-3 mb-xxl-5 pb-xl-0">
+                  <div class="d-flex flex-column flex-md-row align-items-center gap-3 mb-4 justify-content-center justify-content-xl-start">
                     <img src="img/icons/rocket.svg" alt="icon">
                     <div class="advRowTitle">
                       Ваш бизнес не будет простаивать
-                    </div>        
+                    </div>
                   </div>
-  
+
                   <div class="content">
                     <ul>
                       <li>
@@ -1538,16 +1712,16 @@
                       </li>
                     </ul>
                   </div>
-  
+
                 </div>
-                <div class="advRow mb-5">
-                  <div class="d-flex align-items-center gap-3 mb-4">
+                <div class="advRow mb-4 pb-0 pb-dm-3 mb-xxl-5 pb-xl-0">
+                  <div class="d-flex flex-column flex-md-row align-items-center gap-3 mb-4 justify-content-center justify-content-xl-start">
                     <img src="img/icons/bakalavr.svg" alt="icon">
                     <div class="advRowTitle">
                       Сделайте шаг к росту в своей карьере
-                    </div>        
+                    </div>
                   </div>
-  
+
                   <div class="content">
                     <ul>
                       <li>
@@ -1564,14 +1738,17 @@
                       </li>
                     </ul>
                   </div>
-  
+
                 </div>
               </div>
-         
+
             </div>
-            <div class="col-lg-6">
-              <div class="pt-5 px-2">
-                <div class="d-flex gap-3 justify-content-between">
+            <div class="col-xl-6 mt-4 mt-xl-0 pb-5 pb-xl-0">
+
+              <img class="advImg mx-auto d-block d-xl-none" src="img/admin/adv/image-sm.jpg" alt="image">
+
+              <div class=" pt-4 pt-md-5 px-2">
+                <div class="d-flex gap-2 gap-md-3 justify-content-center justify-content-xl-between">
                   <div class="d-flex flex-column gap-2 advCard">
                     <div class="advName">
                       Максим Яценко

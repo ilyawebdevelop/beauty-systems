@@ -50,6 +50,11 @@
     }
   }
 
+  .header-fixed-icon {
+    svg {
+      fill: #000;
+    }
+  }
   &--white {
     border-bottom: 1px solid var(--white-02, rgba(255, 255, 255, 0.20));
 
@@ -74,10 +79,15 @@
         // fill: #fff;
       }
     }
-  }
-  .header-fixed-icon {
-    svg {
-      fill: #000;
+    .header-fixed-icon {
+      svg {
+        fill: #fff;
+      }
+    }
+    .hamburger  {
+      div {
+        background: #fff;
+      }
     }
   }
 }

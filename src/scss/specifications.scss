@@ -545,6 +545,12 @@ table {
   &-xl {
     font-size: 24px;
     line-height: 36px;
+    &-sm-lg {
+      @media(max-width: 991px){
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
   }
 
   &--xxl {
@@ -555,6 +561,12 @@ table {
       @media(max-width: 991px){
         font-size: 14px;
         line-height: 20px;
+      }
+    }
+    &-sm-xl {
+      @media(max-width: 991px){
+        font-size: 24px;
+        line-height: 36px;
       }
     }
   }
@@ -591,7 +603,11 @@ table {
     color: var(--gray2);
   }
 }
-
+.fw-medium-sm-normal {
+  @media(max-width: 991px){
+    font-weight: 400!important;
+  }
+}
 a.text--white-06 {
   &:hover {
     color: #fff;
@@ -807,10 +823,20 @@ h6,
 
   &--pr {
     padding-right: 40px;
+    &-sm-0 {
+      @media(max-width: 991px){
+        padding-right: 0;
+      }
+    }
   }
 
   &--pl {
     padding-left: 40px;
+    &-sm-0 {
+      @media(max-width: 991px){
+        padding-left: 0;
+      }
+    }
   }
 
   &.text--white {
@@ -990,6 +1016,19 @@ h6,
   width: 100%;
   object-fit: cover;
   margin-top: 40px;
+  @media(max-width: 1199px){
+    height: 300px;
+  }
+  @media(max-width: 991px){
+    margin-top: 20px;
+    height: 500px;
+  }
+  @media(max-width: 767px){
+    height: 400px;
+  }
+  @media(max-width: 575px){
+    height: 55vw;
+  }
 }
 
 .text-justify {
