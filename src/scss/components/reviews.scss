@@ -1,11 +1,16 @@
 .reviews {
   &Card {
+
     &Content {
       padding: 40px;
       background-color: var(--white-04);
       border-radius: 40px 40px 40px 2px;
       border: 1px solid var(--Gray, #BCBCBC);
       margin-bottom: 20px;
+      @media(max-width: 991px){
+        box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12);
+        padding: 30px;
+      }
       &--black {
         background-color: var(--black);
         border-color: var(--white-01);
@@ -16,6 +21,11 @@
       height: 120px;
       border-radius: 40px;
       object-fit: cover;
+      @media(max-width: 767px){
+        border-radius: 20px;
+        width: 80px;
+        height: 80px;
+      }
       &--round {
         border-radius: 50%;
       }
@@ -111,4 +121,12 @@
 }
 .inputWidth-50 {
   width: 50%;
+}
+.reviewsSlider {
+  &--sm-pr {
+    @media(max-width: 575px){
+      overflow: visible;
+      padding-right: 20px;
+    }
+  }
 }

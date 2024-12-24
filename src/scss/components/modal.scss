@@ -84,11 +84,28 @@
 
 .modalReviews {
   width: 960px;
+  @media(max-width: 575px){
+    padding: 0;
+    border-radius: 24px;
+  }
+  .modalReviewsContent{
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    @media(max-width: 575px){
+      font-size: 14px;
+    }
+  }
 
   &Text {
     border-radius: 40px 40px 40px 2px;
     border: 1px solid var(--Gray, #BCBCBC);
     background: var(--White, #FFF);
+    @media(max-width: 575px){      
+      border-radius: 24px;
+      font-size: 14px;
+    }
   }
 
   &>.f-button.is-close-btn {

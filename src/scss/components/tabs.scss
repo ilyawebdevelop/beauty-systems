@@ -34,6 +34,14 @@
     border-bottom: 1px solid var(--Gray, #BCBCBC);
     width: 100%;
     padding-left: 16px;
+    flex-wrap: wrap;
+   
+    @media(max-width: 575px){
+      margin-left: -20px;
+      margin-right: -20px;
+      width: auto;    
+      overflow-x: scroll; 
+    }
   }
 
 

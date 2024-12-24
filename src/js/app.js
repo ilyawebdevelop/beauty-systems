@@ -432,6 +432,15 @@ document.querySelectorAll('.reviewsSlider').forEach(n => {
       prevEl: n.querySelector('.navArrowPrev'),
       nextEl: n.querySelector('.navArrowNext'),
     },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+      },     
+    },
   });
 });
 

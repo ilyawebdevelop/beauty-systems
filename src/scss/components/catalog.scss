@@ -61,6 +61,12 @@
   }
 
   &Slider {
+    &-sm-pr {
+      @media(max-width: 575px){
+        padding-right: 20px;
+        overflow: visible;
+      }
+    }
     .navArrow {
       width: 32px;
       height: 32px;
@@ -85,6 +91,12 @@
           background-image: url('@img/icons/icon-right-white.svg');
         }
       }
+    }
+  }
+  &Slide {
+    height: auto;
+    .productCard {
+      height: 100%;
     }
   }
 }
