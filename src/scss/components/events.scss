@@ -435,16 +435,32 @@
 .eventImage {
   width: 100%;
   height: auto;
+  @media(max-width: 1199px){
+    max-height: 500px;
+    object-fit: cover;
+  }
 }
 
 .eventContent {
   padding-left: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media(max-width: 1400px){
+    padding-left: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media(max-width: 1199px){
+    margin-top: 40px;
+    padding-left: 0;
+  }
 }
 
 .eventContentAction {
   margin-top: 80px;
+  @media(max-width: 991px){
+    margin-top: 30px;
+  }
 
   .button {
     padding-left: 28px;
@@ -454,6 +470,12 @@
 
 .eventIntro {
   margin-bottom: 130px;
+  @media(max-width: 1400px){
+    margin-bottom: 80px;
+  }
+  @media(max-width: 991px){
+    margin-bottom: 50px;
+  }
 }
 
 .event {
@@ -473,4 +495,9 @@
   border-radius: 50%;
   flex-shrink: 0;
   margin-right: 40px;
+  @media(max-width: 767px){
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+  }
 }

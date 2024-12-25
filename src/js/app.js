@@ -63,7 +63,7 @@ function hideInfoEvent() {
 
 // hideInfoEvent();
 let eventRegisterClose = document.querySelector('.eventRegisterClose');
-eventRegisterClose.addEventListener('click', () => {
+eventRegisterClose?.addEventListener('click', () => {
   hideInfoEvent();
   let airDatepickerCells = document.querySelectorAll('.air-datepicker-cell.-day-.-selected-');
   airDatepickerCells.forEach(el => {
