@@ -355,12 +355,15 @@ document.querySelectorAll('.finishedSlider').forEach(n => {
     breakpoints: {
       0: {
         slidesPerView: 2,
+        spaceBetween: 20,
       },
       992: {
         slidesPerView: 3,
+        spaceBetween: 20,
       },
-      1200: {
+      1401: {
         slidesPerView: 4,
+        spaceBetween: 50,
       },
     },
   });
@@ -392,6 +395,35 @@ document.querySelectorAll('.smiSlider').forEach(n => {
         slidesPerView: 2,
       },
       992: {
+        slidesPerView: 3,
+      }
+    },
+  });
+});
+
+// Инициализация слайдера priceSlider
+document.querySelectorAll('.priceSlider').forEach(n => {
+  const mySwiperPrice = new Swiper(n, {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    speed: 600,
+    pagination: {
+      el: n?.querySelector('.swiper-pagination'),
+      clickable: true,
+      type: 'bullets',
+    },
+    navigation: {
+      prevEl: n.querySelector('.navArrowPrev'),
+      nextEl: n.querySelector('.navArrowNext'),
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      }, 
+      1200: {
         slidesPerView: 3,
       }
     },
@@ -501,16 +533,22 @@ if (mediaQuery991.matches) {
   document.querySelectorAll('.advSlider').forEach(n => {
     const mySwiperAdvItem = new Swiper(n, {
       slidesPerView: 2,
-      spaceBetween: 25,
+      spaceBetween: 20,
       speed: 600,
       pagination: {
         el: n?.querySelector('.swiper-pagination'),
         clickable: true,
         type: 'bullets',
       },
-      navigation: {
-        prevEl: n.querySelector('.navArrowPrev'),
-        nextEl: n.querySelector('.navArrowNext'),
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
       },
     });
   });

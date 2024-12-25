@@ -3,15 +3,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-  @media(max-width: 991px){
+  @media(max-width: 1400px){   
+    background-color: #dee1e6;
+    background-position: right -99px center;    
+  }
+  @media(max-width: 1199px){
     background-image: none!important;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
     padding-top: 20px;
+    background-color: transparent;
   }
   h2.text--black, .h2.text--black {
-    @media(max-width: 991px){
+    @media(max-width: 1199px){
       color: #fff;
       text-transform: uppercase;
       font-weight: 400;
@@ -19,7 +24,7 @@
     }
   }
   .content {
-    @media(max-width: 991px){
+    @media(max-width: 1199px){
       color: var(--white-06);
       text-align: center;
     }

@@ -5,6 +5,18 @@
       height: 440px;
       object-fit: cover;
       margin-bottom: 40px;
+      @media(max-width: 1199px){
+        height: 350px;
+      }
+      @media(max-width: 991px){
+        margin-bottom: 20px;
+      }
+      @media(max-width: 767px){
+        height: 500px;
+      }
+      @media(max-width: 575px){
+        height: 85vw;
+      }
     }
   }
 }

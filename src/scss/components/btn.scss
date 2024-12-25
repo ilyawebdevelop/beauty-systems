@@ -282,6 +282,14 @@
 
 .priceCardBtn {
   width: 50%;
+  @media(max-width: 1400px){
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media(max-width: 991px){
+    height: 48px;
+    font-size: 14px;
+  }
 }
 
 .caseVideoBtn {
