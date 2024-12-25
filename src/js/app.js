@@ -31,11 +31,13 @@ let dp = new AirDatepicker('#calendarEl', {
 });
 
 // get selectedDates Array;
-let dpSelectedArray = ['2024, 12, 11', '2024, 12, 08', '2024, 12, 05', '2024, 12, 23'];
+// let dpSelectedArray = ;
 if (document.querySelector('#calendarEl')) {
-  dp.selectDate(dpSelectedArray);
+  let date = new Date('2024-12-25');
+  let date_2 = new Date('2024-12-15');
+  let date_3 = new Date('2024-12-06');
+  dp.selectDate([date, date_2, date_3]);
 }
-
 
 function eventShow() {
   let airDatepickerCells = document.querySelectorAll('.air-datepicker-cell.-day-.-selected-');
@@ -58,6 +60,17 @@ function hideInfoEvent() {
   infoCol.classList.add('d-none');
   infoCol.classList.remove('d-block');
 }
+
+// hideInfoEvent();
+let eventRegisterClose = document.querySelector('.eventRegisterClose');
+eventRegisterClose.addEventListener('click', () => {
+  hideInfoEvent();
+  let airDatepickerCells = document.querySelectorAll('.air-datepicker-cell.-day-.-selected-');
+  airDatepickerCells.forEach(el => {
+    el.classList.remove('cell-show-message');
+  });
+
+});
 
 
 // Import swiper
@@ -99,8 +112,8 @@ setTimeout(function () {
   var mySwiperEventSlider = new Swiper(introEventSlider, {
     slidesPerView: 1,
     speed: 800,
-    spaceBetween: 10,   
-    loop: true,  
+    spaceBetween: 10,
+    loop: true,
     autoplay: {
       delay: 5000,
     },
@@ -187,12 +200,12 @@ document.querySelectorAll('.galLgSlider').forEach(n => {
       nextEl: n.querySelector('.navArrowNext'),
     },
     breakpoints: {
-      0: {       
+      0: {
         spaceBetween: 20,
       },
-      576: {        
+      576: {
         spaceBetween: 50,
-      },    
+      },
     },
   });
 });
@@ -214,7 +227,7 @@ document.querySelectorAll('.videoSlider').forEach(n => {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1,        
+        slidesPerView: 1,
       },
       768: {
         slidesPerView: 2,
@@ -253,12 +266,12 @@ document.querySelectorAll('.partnersSlider').forEach(n => {
       nextEl: n.querySelector('.navArrowNext'),
     },
     breakpoints: {
-      0: {       
+      0: {
         spaceBetween: 20,
       },
-      576: {        
+      576: {
         spaceBetween: 40,
-      },    
+      },
     },
   });
 });
@@ -280,17 +293,17 @@ document.querySelectorAll('.blogSlider').forEach(n => {
     },
     breakpoints: {
       0: {
-        slidesPerView: 1,      
+        slidesPerView: 1,
       },
       768: {
-        slidesPerView: 2,        
+        slidesPerView: 2,
       },
       992: {
-        slidesPerView: 3,    
-      },  
+        slidesPerView: 3,
+      },
       1200: {
-        slidesPerView: 4,    
-      },  
+        slidesPerView: 4,
+      },
     },
   });
 });
@@ -312,14 +325,14 @@ document.querySelectorAll('.teamSlider').forEach(n => {
     },
     breakpoints: {
       0: {
-        slidesPerView: 2,      
-      }, 
+        slidesPerView: 2,
+      },
       992: {
-        slidesPerView: 3,    
-      },  
+        slidesPerView: 3,
+      },
       1200: {
-        slidesPerView: 4,    
-      },  
+        slidesPerView: 4,
+      },
     },
   });
 });
@@ -338,6 +351,17 @@ document.querySelectorAll('.finishedSlider').forEach(n => {
     navigation: {
       prevEl: n.querySelector('.navArrowPrev'),
       nextEl: n.querySelector('.navArrowNext'),
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
     },
   });
 });
@@ -366,7 +390,7 @@ document.querySelectorAll('.smiSlider').forEach(n => {
       },
       768: {
         slidesPerView: 2,
-      },  
+      },
       992: {
         slidesPerView: 3,
       }
@@ -437,7 +461,7 @@ document.querySelectorAll('.reviewsSlider').forEach(n => {
       },
       768: {
         slidesPerView: 2,
-      },     
+      },
     },
   });
 });

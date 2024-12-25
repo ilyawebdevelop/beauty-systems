@@ -15580,6 +15580,12 @@ table {
     line-height: 36px;
   }
 }
+@media (max-width: 991px) {
+  .text--xxl-sm-lg {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .text--white {
   color: #fff;
 }
@@ -15986,6 +15992,22 @@ h6--sm-h4,
     font-size: 12px;
   }
 }
+.gaLgSlide--dark .galLgImg {
+  position: relative;
+}
+.gaLgSlide--dark .galLgImg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.gaLgSlide--dark .galLgVideoBtn {
+  z-index: 1;
+}
 
 .galLgVideoBtn {
   width: 166px;
@@ -16003,9 +16025,20 @@ h6--sm-h4,
   margin: auto;
   transition: background-color 0.2s linear;
 }
+@media (max-width: 1199px) {
+  .galLgVideoBtn {
+    width: 80px;
+    height: 80px;
+  }
+}
 .galLgVideoBtn img {
   width: 50px;
   height: fit-content;
+}
+@media (max-width: 1199px) {
+  .galLgVideoBtn img {
+    width: 20px;
+  }
 }
 
 .certImg {
@@ -16051,6 +16084,11 @@ h6--sm-h4,
 
 .mb-6 {
   margin-bottom: 60px;
+}
+@media (max-width: 991px) {
+  .mb-6-sm-40 {
+    margin-bottom: 40px;
+  }
 }
 
 .mt-6 {
@@ -16398,6 +16436,20 @@ h6--sm-h4,
   fill: #fff;
   width: 24px;
   height: 24px;
+}
+
+.eventRegisterClose {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: var(--Secondary, #339);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+.eventRegisterClose svg {
+  width: 24px;
 }
 
 /* Hamburger Menu */
@@ -18855,6 +18907,12 @@ h6--sm-h4,
   width: fit-content;
   margin-left: auto;
 }
+@media (max-width: 991px) {
+  .calendarEl .air-datepicker--navigation {
+    margin-right: auto;
+    margin-top: 40px;
+  }
+}
 .calendarEl .air-datepicker-cell {
   border-bottom: 1px solid rgba(224, 224, 224, 0.3);
   border-radius: 0;
@@ -18883,10 +18941,17 @@ h6--sm-h4,
   content: "";
   width: 32px;
   height: 32px;
-  background: var(--blue) url("../img/icons/arrow-calendar.svg") no-repeat center center/20px;
+  background: var(--blue) url("../img/icons/arrow-calendar.svg") no-repeat center center/34px;
   position: absolute;
   right: 8px;
   bottom: 8px;
+}
+@media (max-width: 400px) {
+  .calendarEl .air-datepicker-cell.-selected-::before {
+    width: 25px;
+    height: 25px;
+    background: var(--blue) url("../img/icons/arrow-calendar.svg") no-repeat center center/23px;
+  }
 }
 .calendarEl .air-datepicker-cell.cell-show-message {
   background: var(--blue);
@@ -18902,9 +18967,10 @@ h6--sm-h4,
 }
 
 .air-datepicker--content {
-  margin-top: 40px;
+  margin-top: 35px;
   padding-bottom: 0;
   padding-right: 0;
+  padding-top: 0;
 }
 
 .air-datepicker-body--day-name {
@@ -18937,6 +19003,11 @@ h6--sm-h4,
   color: var(--gray);
   font-weight: 500;
 }
+@media (max-width: 991px) {
+  .air-datepicker-nav--title {
+    font-size: 16px;
+  }
+}
 .air-datepicker-nav--title:hover {
   background: var(--white-005);
 }
@@ -18952,6 +19023,15 @@ h6--sm-h4,
   top: 30px;
   max-width: 500px;
 }
+@media (max-width: 991px) {
+  .calendarW .calendarTitle {
+    position: unset;
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .air-datepicker-body--cells.-days- {
   grid-auto-rows: 80px;
@@ -18961,6 +19041,36 @@ h6--sm-h4,
   padding-top: 110px;
   padding-left: 30px;
   border-bottom: 1px solid rgba(224, 224, 224, 0.3);
+}
+@media (max-width: 991px) {
+  .eventRegister {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 40px;
+    border-top: 1px solid var(--Gray2, #5C5C5C);
+    border-bottom: 1px solid var(--Gray2, #5C5C5C);
+    border-left: 1px solid var(--Gray2, #5C5C5C);
+    border-right: 1px solid var(--Gray2, #5C5C5C);
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    padding: 30px 40px 40px 40px;
+  }
+}
+@media (max-width: 575px) {
+  .eventRegister {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+    margin-right: -10px;
+    padding-left: 25px;
+  }
+}
+@media (max-width: 991px) {
+  .eventRegister .button-register {
+    font-size: 14px;
+    height: 48px;
+  }
 }
 
 .calendarGrid {
@@ -18972,6 +19082,17 @@ h6--sm-h4,
 .calendarGrid .eventRegister {
   flex-shrink: 0;
   width: 33%;
+}
+@media (max-width: 991px) {
+  .calendarGrid .eventRegister {
+    width: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .calendarGrid .eventRegister {
+    max-width: 400px;
+    width: 100%;
+  }
 }
 
 .eventRegisterPerson {
@@ -18988,6 +19109,11 @@ h6--sm-h4,
   display: -webkit-box;
   -webkit-box-orient: vertical;
   padding-right: 5px;
+}
+@media (max-width: 991px) {
+  .eventRegisterTitle {
+    font-weight: 400;
+  }
 }
 
 .smiSlide .eventCard {
@@ -19014,6 +19140,11 @@ h6--sm-h4,
   object-fit: cover;
   border-radius: 40px;
 }
+@media (max-width: 1199px) {
+  .eventCardImg img {
+    height: 250px;
+  }
+}
 .eventCardContent {
   padding-top: 40px;
   padding-right: 40px;
@@ -19023,6 +19154,11 @@ h6--sm-h4,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 1199px) {
+  .eventCardContent {
+    padding: 20px;
+  }
 }
 .eventCardTitle {
   overflow: hidden;
@@ -19043,6 +19179,11 @@ h6--sm-h4,
   -webkit-box-orient: vertical;
   /* Вертикальная ориентация */
 }
+@media (max-width: 991px) {
+  .eventCardDescr {
+    display: none;
+  }
+}
 
 .finishedCard {
   height: 100%;
@@ -19058,6 +19199,17 @@ h6--sm-h4,
   height: 300px;
   object-fit: cover;
 }
+@media (max-width: 767px) {
+  .finishedCardImg img {
+    height: 220px;
+  }
+}
+@media (max-width: 575px) {
+  .finishedCardImg img {
+    height: 43vw;
+    border-radius: 20px;
+  }
+}
 .finishedCardContent {
   flex: 1;
   display: flex;
@@ -19069,8 +19221,24 @@ h6--sm-h4,
   padding-left: 20px;
   padding-right: 20px;
 }
+@media (max-width: 575px) {
+  .finishedCardContentT {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .finishedCardTitle {
   display: block;
+}
+@media (max-width: 991px) {
+  .finishedCardTitle {
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    /* Включаем флексбоксы */
+    -webkit-box-orient: vertical;
+    /* Вертикальная ориентация */
+  }
 }
 .finishedCardTitle:hover {
   color: var(--blue);
@@ -19082,8 +19250,20 @@ h6--sm-h4,
   padding-left: 20px;
   padding-right: 20px;
 }
+@media (max-width: 575px) {
+  .finishedCardPrice {
+    padding-left: 10px;
+  }
+}
 .finishedCardAction .button {
   width: 50%;
+}
+@media (max-width: 767px) {
+  .finishedCardAction .button {
+    width: 100%;
+    font-size: 14px;
+    height: 48px;
+  }
 }
 
 .finishedSlide {
@@ -19094,6 +19274,14 @@ h6--sm-h4,
   font-weight: 400;
   max-width: 345px;
   display: block;
+}
+@media (max-width: 991px) {
+  .whomCardTitle {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 .whomCardTitle:hover {
   color: var(--blue);
@@ -19107,6 +19295,16 @@ h6--sm-h4,
   width: 100%;
   height: 440px;
   object-fit: cover;
+}
+@media (max-width: 767px) {
+  .whomCardImg img {
+    height: 350px;
+  }
+}
+@media (max-width: 575px) {
+  .whomCardImg img {
+    height: 76vw;
+  }
 }
 
 .eventImage {
@@ -19148,11 +19346,40 @@ h6--sm-h4,
   margin-right: 40px;
 }
 
+@media (max-width: 991px) {
+  .licenseCenter .h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 575px) {
+  .licenseCenter .h3 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .licenseCenter .container {
   position: relative;
 }
+@media (max-width: 575px) {
+  .licenseCenter .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 .licenseCenter .container .row {
   min-height: 560px;
+}
+@media (max-width: 991px) {
+  .licenseCenter .container .row {
+    min-height: unset;
+  }
+}
+@media (max-width: 575px) {
+  .licenseCenter .container .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .licenseCenterImg {
   height: 100%;
@@ -19160,11 +19387,22 @@ h6--sm-h4,
   min-width: 60vw;
   object-position: center;
 }
+@media (max-width: 991px) {
+  .licenseCenterImg {
+    width: 100%;
+  }
+}
 .licenseCenterImgW {
   position: absolute;
   top: 0;
   height: 100%;
   left: 570px;
+}
+@media (max-width: 991px) {
+  .licenseCenterImgW {
+    position: relative;
+    left: unset;
+  }
 }
 .licenseCenterImgW::before {
   content: "";
@@ -19172,8 +19410,15 @@ h6--sm-h4,
   left: 0;
   top: 0;
   width: 472px;
-  height: 560px;
+  height: 100%;
   background: linear-gradient(90deg, #D6D6D6 0%, rgba(174, 177, 185, 0) 93.33%);
+}
+@media (max-width: 991px) {
+  .licenseCenterImgW::before {
+    background: linear-gradient(180deg, #D6D6D6 0%, rgba(174, 177, 185, 0) 100%);
+    width: 100%;
+    height: 50%;
+  }
 }
 
 .centerIntroImg {

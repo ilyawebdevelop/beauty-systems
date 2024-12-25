@@ -180,8 +180,9 @@
     min-width: unset;
   }
 }
+
 .button--sm-100 {
-  @media(max-width: 575px){
+  @media(max-width: 575px) {
     width: 100%;
   }
 }
@@ -205,16 +206,17 @@
   width: fit-content;
   padding-left: 12px;
   padding-right: 12px;
+
   &--sm-text {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       background-color: transparent;
       color: #fff;
       font-size: 12px;
       padding-top: 0;
       padding-bottom: 0;
       height: fit-content;
-      padding-left: 0!important;
-      padding-right: 0!important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
       font-weight: 700;
     }
   }
@@ -228,10 +230,12 @@
 
 .coopBtn {
   margin-top: 40px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     margin-top: 20px;
   }
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     width: 100%;
   }
 }
@@ -244,7 +248,8 @@
 
 .downloadBtn {
   margin-top: 40px;
-  @media(max-width: 767px){
+
+  @media(max-width: 767px) {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -252,7 +257,8 @@
     z-index: 1;
     min-width: unset;
   }
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     width: 100%;
   }
 }
@@ -328,15 +334,32 @@
     fill: rgba($color: #fff, $alpha: .4);
   }
 }
-.header-fixed-icon{
+
+.header-fixed-icon {
   width: 24px;
   height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
+
   svg {
     fill: #fff;
     width: 24px;
     height: 24px;
+  }
+}
+
+.eventRegisterClose {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  background: var(--Secondary, #339);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+
+  svg {
+    width: 24px;
   }
 }
