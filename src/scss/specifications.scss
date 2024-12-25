@@ -294,6 +294,9 @@ table {
   height: 200px;
   font-size: 14px;
   display: block;
+  @media(max-width: 991px){
+    font-size: 16px;
+  }
 
   &--black {
 
@@ -546,6 +549,12 @@ table {
   &--sm {
     font-size: 14px;
     line-height: 20px;
+    &-sm-xs {
+      @media(max-width: 991px){
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
   }
 
   &-xl {
@@ -555,6 +564,12 @@ table {
       @media(max-width: 991px){
         font-size: 20px;
         line-height: 30px;
+      }
+    }
+    &-sm-md {
+      @media(max-width: 991px){
+        font-size: 16px;
+        line-height: 24px;
       }
     }
   }
@@ -612,6 +627,11 @@ table {
 .fw-medium-sm-normal {
   @media(max-width: 991px){
     font-weight: 400!important;
+  }
+}
+.fw-sm-medium {
+  @media(max-width: 991px){
+   font-weight: 500!important; 
   }
 }
 a.text--white-06 {
@@ -740,6 +760,10 @@ h4,
 .h5 {
   font-size: 18px;
   line-height: 32px;
+  @media(max-width: 991px){
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   &.text--black {
     color: var(--black);

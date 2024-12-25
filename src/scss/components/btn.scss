@@ -180,6 +180,11 @@
     min-width: unset;
   }
 }
+.button--sm-100 {
+  @media(max-width: 575px){
+    width: 100%;
+  }
+}
 
 .headerSearchBtn {
   svg {

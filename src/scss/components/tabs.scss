@@ -92,6 +92,10 @@
   .tabs__nav {
     border-radius: 32px;
     border: 1px solid var(--Gray, #BCBCBC);
+    @media(max-width: 991px){
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   .tabs__nav-btn {

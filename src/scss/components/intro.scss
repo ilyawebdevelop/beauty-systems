@@ -243,6 +243,10 @@
       padding: 32px;
       background-color: var(--black);
       border-radius: 40px 0px 0px 40px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       @media(max-width: 991px) {
         border-radius: 24px;
@@ -251,8 +255,6 @@
         padding-bottom: 25px;
       }
 
-      // box-sizing: content-box;
-      // height: auto;
       &Date {
         @media(max-width: 991px) {
           display: none;

@@ -99,10 +99,8 @@ setTimeout(function () {
   var mySwiperEventSlider = new Swiper(introEventSlider, {
     slidesPerView: 1,
     speed: 800,
-    spaceBetween: 10,
-    effect: 'fade',
-    loop: true,
-    autoHeight: true,
+    spaceBetween: 10,   
+    loop: true,  
     autoplay: {
       delay: 5000,
     },
