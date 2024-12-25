@@ -1,4 +1,7 @@
 .garanty {
+  @media(max-width: 575px){
+    padding-top: 20px;
+  }
   &Img {
     height: auto;
     width: 100%;

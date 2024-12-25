@@ -517,6 +517,9 @@ table {
 
   &--mb-lg {
     margin-bottom: 60px;
+    @media(max-width: 991px){
+      margin-bottom: 40px;
+    }
   }
 }
 

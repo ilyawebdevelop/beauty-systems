@@ -15488,6 +15488,11 @@ table {
 .sectHead--mb-lg {
   margin-bottom: 60px;
 }
+@media (max-width: 991px) {
+  .sectHead--mb-lg {
+    margin-bottom: 40px;
+  }
+}
 
 .wrapper {
   display: flex;
@@ -19651,13 +19656,19 @@ h6--sm-h4,
 }
 .consultImg {
   height: 100%;
-  max-height: 720px;
+  max-height: 706px;
   width: 100%;
   object-fit: cover;
+}
+@media (max-width: 1400px) {
+  .consultImg {
+    max-height: unset;
+  }
 }
 @media (max-width: 1199px) {
   .consultImg {
     max-height: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 575px) {
@@ -19668,9 +19679,15 @@ h6--sm-h4,
 .consultImg--lg {
   max-height: 780px;
 }
+@media (max-width: 1199px) {
+  .consultImg--lg {
+    max-height: 100%;
+  }
+}
 .consultW {
   border: 1px solid rgba(255, 255, 255, 0.4);
   padding: 40px;
+  height: 100%;
 }
 @media (max-width: 575px) {
   .consultW {
@@ -19683,6 +19700,18 @@ h6--sm-h4,
 }
 .consultW--border-white-02 {
   border-color: var(--white-02);
+}
+@media (max-width: 575px) {
+  .consultW--border-white-02 {
+    border-color: transparent;
+  }
+}
+@media (max-width: 575px) {
+  .consultW--p-sm-0 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
 }
 
 .stepsCard {
@@ -19705,9 +19734,26 @@ h6--sm-h4,
   margin-bottom: 40px;
 }
 
+.stepsSect {
+  padding-top: 0;
+}
+@media (max-width: 991px) {
+  .stepsSect {
+    padding-top: 60px;
+    border-top: 1px solid var(--white-02, rgba(255, 255, 255, 0.2));
+  }
+}
+
 .aparatW {
   border: 1px solid var(--white-02, rgba(255, 255, 255, 0.2));
   padding: 40px;
+}
+@media (max-width: 991px) {
+  .aparatW {
+    border-color: transparent;
+    padding: 0;
+    padding-bottom: 40px;
+  }
 }
 .aparatList li {
   display: flex;
@@ -19718,6 +19764,17 @@ h6--sm-h4,
 }
 .aparatList li::before {
   content: "—";
+}
+
+.aparatImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 575px) {
+  .aparatImg {
+    height: 85vw;
+  }
 }
 
 .workPriceHead {
@@ -19732,17 +19789,49 @@ h6--sm-h4,
   display: grid;
   grid-template-columns: auto 240px;
 }
+@media (max-width: 991px) {
+  .workPriceBody .workPriceRow {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--Gray, #BCBCBC);
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 991px) {
+  .workPriceBody .workPriceRow:nth-child(1) {
+    border-top: 1px solid var(--Gray, #BCBCBC);
+    padding-top: 18px;
+  }
+}
 .workPriceBody .workPriceRow .workPriceCol:nth-child(2) {
   border-left: 1px solid var(--Gray, #BCBCBC);
   font-weight: 500;
+}
+@media (max-width: 991px) {
+  .workPriceBody .workPriceRow .workPriceCol:nth-child(2) {
+    border-color: transparent;
+  }
 }
 
 .workPriceCol {
   border-bottom: 1px solid var(--Gray, #BCBCBC);
   padding-right: 40px;
 }
+@media (max-width: 991px) {
+  .workPriceCol {
+    border-color: transparent;
+    padding-right: 0;
+  }
+}
 .workPriceCol:nth-child(2) {
   padding-left: 40px;
+}
+@media (max-width: 991px) {
+  .workPriceCol:nth-child(2) {
+    padding-left: 0;
+    padding-top: 0;
+  }
 }
 
 .priceParams {
@@ -19754,6 +19843,11 @@ h6--sm-h4,
   width: 24px;
 }
 
+@media (max-width: 575px) {
+  .garanty {
+    padding-top: 20px;
+  }
+}
 .garantyImg {
   height: auto;
   width: 100%;
