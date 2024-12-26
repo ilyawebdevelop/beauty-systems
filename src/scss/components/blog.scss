@@ -8,7 +8,8 @@
       padding-right: 13px;
       padding-left: 27px;
       padding-bottom: 40px;
-      @media(max-width: 991px){
+
+      @media(max-width: 991px) {
         padding-bottom: 24px;
       }
     }
@@ -23,22 +24,24 @@
         width: 100%;
         object-fit: cover;
         height: 240px;
-        @media(max-width: 575px){
+
+        @media(max-width: 575px) {
           border-radius: 24px;
         }
       }
     }
 
     .h6 {
-      @media(max-width: 991px){
+      @media(max-width: 991px) {
         text-transform: uppercase;
         overflow: hidden;
         -webkit-line-clamp: 2;
         display: -webkit-box;
         /* Включаем флексбоксы */
         -webkit-box-orient: vertical;
-        /* Вертикальная ориентация */        
+        /* Вертикальная ориентация */
       }
+
       a {
         display: block;
 
@@ -73,20 +76,35 @@
         padding-left: 40px;
         padding-right: 40px;
         padding-bottom: 33px;
-        @media(max-width: 991px){
+
+        @media(max-width: 991px) {
           padding-bottom: 24px;
+          padding-top: 24px;
+          padding-left: 24px;
+          padding-right: 24px;
         }
       }
+
       .blogCardImg {
-      
+
         img {
           height: 320px;
+
+          @media(max-width: 575px) {
+            height: 260px;
+          }
         }
       }
     }
+
     &--baner {
       position: relative;
       min-height: 550px;
+
+      @media(max-width: 991px) {
+        min-height: 480px;
+      }
+
       &::before {
         content: '';
         position: absolute;
@@ -97,19 +115,29 @@
         background: rgba($color: #000000, $alpha: .5);
         transition: opacity .2s linear;
       }
+
       padding: 65px 40px;
+
       &:hover {
-       &:before {
-        opacity: .7;
-       }
+        &:before {
+          opacity: .7;
+        }
       }
+
       .h3 {
         position: relative;
         z-index: 1;
+
+        @media(max-width: 991px) {
+          font-size: 28px;
+          line-height: 36px;
+        }
       }
     }
+
     &--email {
       padding: 40px;
+
       .button {
         margin-top: 32px;
         width: 100%;
@@ -119,11 +147,12 @@
 
   &Slider {
     &--sm-pr {
-      @media(max-width: 575px){
+      @media(max-width: 575px) {
         overflow: visible;
         padding-right: 20px;
       }
     }
+
     .swiper-slide {
       height: auto;
 
@@ -143,4 +172,58 @@
   /* Включаем флексбоксы */
   -webkit-box-orient: vertical;
   /* Вертикальная ориентация */
+}
+
+.blogSearchW {
+  display: flex;
+
+  @media(max-width: 991px) {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+  }
+
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+
+  }
+
+  .searchInputW {
+    @media(max-width: 991px) {
+      width: 100%;
+    }
+
+    input {
+      @media(max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
+  .searchSelect {
+    flex-shrink: 0;
+  }
+}
+
+.blogSort {
+  @media(max-width: 991px) {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+  }
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;
+  }
 }

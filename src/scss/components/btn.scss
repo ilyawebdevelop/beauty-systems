@@ -371,3 +371,17 @@
     width: 24px;
   }
 }
+.blogSearchBtn {
+  background-color: var(--white-01, rgba(255, 255, 255, 0.10));  
+  background-image: url('@img/icons/search-white.svg');
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  svg {
+    fill: #fff;
+  }
+  &.active {
+    background-image: url('@img/icons/remove-white.svg');
+    background-size: 20px;
+  }
+}

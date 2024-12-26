@@ -15392,6 +15392,12 @@ table {
   background-repeat: no-repeat;
   background-position: right 28px center;
 }
+@media (max-width: 991px) {
+  .formSelect {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+}
 .formSelect option {
   color: var(--black);
 }
@@ -16117,6 +16123,11 @@ h6--sm-h4,
     margin-bottom: 0;
   }
 }
+@media (max-width: 991px) {
+  .mb-6-sm-20 {
+    margin-bottom: 20px;
+  }
+}
 
 .mt-6 {
   margin-top: 60px;
@@ -16504,6 +16515,21 @@ h6--sm-h4,
 }
 .eventRegisterClose svg {
   width: 24px;
+}
+
+.blogSearchBtn {
+  background-color: var(--white-01, rgba(255, 255, 255, 0.1));
+  background-image: url("../img/icons/search-white.svg");
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+}
+.blogSearchBtn svg {
+  fill: #fff;
+}
+.blogSearchBtn.active {
+  background-image: url("../img/icons/remove-white.svg");
+  background-size: 20px;
 }
 
 /* Hamburger Menu */
@@ -16969,6 +16995,13 @@ h6--sm-h4,
 }
 .eventsTabs .tabs__nav-btn:hover {
   color: var(--black);
+}
+
+@media (max-width: 991px) {
+  .blogTabs .tabs__nav {
+    margin-left: unset;
+    margin-right: unset;
+  }
 }
 
 .header {
@@ -18089,15 +18122,28 @@ h6--sm-h4,
 @media (max-width: 991px) {
   .blogCard--archive .blogCardContent {
     padding-bottom: 24px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 .blogCard--archive .blogCardImg img {
   height: 320px;
 }
+@media (max-width: 575px) {
+  .blogCard--archive .blogCardImg img {
+    height: 260px;
+  }
+}
 .blogCard--baner {
   position: relative;
   min-height: 550px;
   padding: 65px 40px;
+}
+@media (max-width: 991px) {
+  .blogCard--baner {
+    min-height: 480px;
+  }
 }
 .blogCard--baner::before {
   content: "";
@@ -18115,6 +18161,12 @@ h6--sm-h4,
 .blogCard--baner .h3 {
   position: relative;
   z-index: 1;
+}
+@media (max-width: 991px) {
+  .blogCard--baner .h3 {
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 .blogCard--email {
   padding: 40px;
@@ -18145,6 +18197,56 @@ h6--sm-h4,
   /* Включаем флексбоксы */
   -webkit-box-orient: vertical;
   /* Вертикальная ориентация */
+}
+
+.blogSearchW {
+  display: flex;
+}
+@media (max-width: 991px) {
+  .blogSearchW {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+  }
+}
+.blogSearchW.active {
+  display: flex;
+  -webkit-animation: shows 0.2s;
+  animation: shows 0.2s;
+}
+@media (max-width: 991px) {
+  .blogSearchW .searchInputW {
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .blogSearchW .searchInputW input {
+    width: 100%;
+  }
+}
+.blogSearchW .searchSelect {
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .blogSort {
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #000000;
+  }
+}
+.blogSort.active {
+  display: block;
+  -webkit-animation: shows 0.2s;
+  animation: shows 0.2s;
 }
 
 @media (max-width: 575px) {
@@ -20050,6 +20152,15 @@ h6--sm-h4,
   column-gap: 4px;
   row-gap: 10px;
 }
+@media (max-width: 575px) {
+  .catList {
+    overflow-x: scroll;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .catItem.active .catLink {
   background-color: var(--blue);
   border-color: var(--blue);
@@ -20064,6 +20175,11 @@ h6--sm-h4,
   justify-content: center;
   height: 56px;
   transition: background-color 0.2s linear, color 0.2s linear;
+}
+@media (max-width: 575px) {
+  .catLink {
+    white-space: nowrap;
+  }
 }
 .catLink:hover {
   background-color: var(--blue);

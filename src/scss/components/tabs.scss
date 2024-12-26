@@ -125,3 +125,11 @@
     }
   }
 }
+.blogTabs {
+  .tabs__nav {
+    @media(max-width: 991px){
+      margin-left: unset;
+      margin-right: unset;
+    }
+  }
+}

@@ -361,7 +361,7 @@
     </div>
   </div>
 </section>	
-			<section class="sect pt-0 pb-0">
+			<section class="sect pt-5 pt-lg-4 pb-0">
   <div class="container">
     <div class="mb-4 pb-3">
       <p class="text--white" style="max-width: 745px;">
@@ -369,7 +369,7 @@
       </p>
     </div>
 
-    <ul class="catList d-flex flex-wrap mb-6">
+    <ul class="catList d-flex flex-no-wrap flex-sm-wrap mb-6 mb-6-sm-40">
       <li class="catItem active"><a class="catLink px-4 fw-medium" href="#">все</a></li>
       <li class="catItem"><a class="catLink px-4 fw-medium" href="#">для косметологов</a></li>
       <li class="catItem"><a class="catLink px-4 fw-medium" href="#">для руководителей</a></li>
@@ -383,10 +383,10 @@
       <li class="catItem"><a class="catLink px-4 fw-medium" href="#">техническая информация </a></li>
     </ul>
 
-    <div class="tabs eventsTabs" data-tabs="popup_2">
-      <div class="d-flex justify-content-between mb-6">
-        <div class="d-flex gap-2">
-          <div class="searchW d-flex">
+    <div class="tabs eventsTabs blogTabs" data-tabs="popup_2">
+      <div class="d-flex justify-content-between mb-6 mb-6-sm-40 position-relative">
+        <div class="d-flex gap-2 w-100 justify-content-between justify-content-lg-start">
+          <div class="searchW blogSearchW">
             <div class="searchInputW">
               <input type="search" placeholder="Поиск">
               <div class="searchAction d-flex align-items-center">
@@ -416,8 +416,11 @@
             <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Статьи</button></li>
             <li class="tabs__nav-item"><button class="tabs__nav-btn text--white" type="button">Видео</button></li>
           </ul>
+          <button class="blogSearchBtn button button--round d-flex d-lg-none">
+            <!-- <img src="img/icons/search-white.svg" alt="icon"> -->
+          </button>
         </div>
-        <select name="sort" id="sort" class="formSelect formSelect--w-fit">
+        <select name="sort" id="sort" class="formSelect blogSort formSelect--w-fit">
           <option value="1">Сначала новые</option>
           <option value="2">Сначала старые</option>
         </select>
@@ -426,7 +429,7 @@
       <div class="tabs__content">
         <div class="tabs__panel">
           <div class="row">
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-1.png" alt="image">
@@ -443,7 +446,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-2.png" alt="image">
@@ -461,7 +464,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive blogCard--email">
   <h3 class="h3 text-uppercase mb-3" style="max-width: 300px;">
     Подпишитесь на рассылку
@@ -484,12 +487,12 @@
     </label>
   </div>
 
-  <button class="button button--blue">Подписаться</button>
+  <button class="button button--blue min-w-unset">Подписаться</button>
 
 
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <a class="blogCard blogCard--archive blogCard--baner d-block" style="background-image: url('img/admin/blog/image-2.png');"
   href="#">
   <h3 class="h3 text-uppercase mb-3" style="max-width: 300px;">
@@ -498,7 +501,7 @@
   </h3>
 </a>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-2.png" alt="image">
@@ -516,7 +519,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-1.png" alt="image">
@@ -533,7 +536,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-1.png" alt="image">
@@ -550,7 +553,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-2.png" alt="image">
@@ -568,7 +571,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <a class="blogCard blogCard--archive blogCard--baner d-block" style="background-image: url('img/admin/blog/image-2.png');"
   href="#">
   <h3 class="h3 text-uppercase mb-3" style="max-width: 300px;">
@@ -587,8 +590,8 @@
         </div>
         <div class="tabs__panel">
           <div class="row">
-           
-            <div class="col-lg-4 mb-6">
+
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive blogCard--email">
   <h3 class="h3 text-uppercase mb-3" style="max-width: 300px;">
     Подпишитесь на рассылку
@@ -611,12 +614,12 @@
     </label>
   </div>
 
-  <button class="button button--blue">Подписаться</button>
+  <button class="button button--blue min-w-unset">Подписаться</button>
 
 
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <a class="blogCard blogCard--archive blogCard--baner d-block" style="background-image: url('img/admin/blog/image-2.png');"
   href="#">
   <h3 class="h3 text-uppercase mb-3" style="max-width: 300px;">
@@ -625,7 +628,7 @@
   </h3>
 </a>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-1.png" alt="image">
@@ -642,7 +645,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-2.png" alt="image">
@@ -660,7 +663,7 @@
   </div>
 </div>
             </div>
-     
+
           </div>
           <button class="button button--blue mx-auto">
             загрузить ещё
@@ -671,7 +674,7 @@
         </div>
         <div class="tabs__panel">
           <div class="row">
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <a class="blogCard blogCard--archive blogCard--baner d-block" style="background-image: url('img/admin/blog/image-2.png');"
   href="#">
   <h3 class="h3 text-uppercase mb-3" style="max-width: 300px;">
@@ -680,7 +683,7 @@
   </h3>
 </a>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-1.png" alt="image">
@@ -697,7 +700,7 @@
   </div>
 </div>
             </div>
-            <div class="col-lg-4 mb-6">
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive blogCard--email">
   <h3 class="h3 text-uppercase mb-3" style="max-width: 300px;">
     Подпишитесь на рассылку
@@ -720,13 +723,13 @@
     </label>
   </div>
 
-  <button class="button button--blue">Подписаться</button>
+  <button class="button button--blue min-w-unset">Подписаться</button>
 
 
 </div>
             </div>
-         
-            <div class="col-lg-4 mb-6">
+
+            <div class="col-md-6 col-xl-4 mb-6 mb-6-sm-20">
               <div class="blogCard blogCard--archive">
   <a href="#" class="blogCardImg">
     <img src="img/admin/blog/image-2.png" alt="image">
@@ -744,7 +747,7 @@
   </div>
 </div>
             </div>
-     
+
           </div>
           <button class="button button--blue mx-auto">
             загрузить ещё
@@ -1008,14 +1011,14 @@
               </div>
 
             </div>
-            <div class="d-flex justify-content-between mt-5 px-5">
-              <button class="navArrow navArrow--white navArrowPrev">
+            <div class="d-flex justify-content-between mt-4 mt-lg-5 px-0 px-lg-5">
+              <button class="navArrow navArrow--white navArrowPrev d-none d-sm-flex">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#slider-prev"></use>
                 </svg>
               </button>
               <div class="swiper-pagination swiper-pagination--white"></div>
-              <button class="navArrow navArrow--white navArrowNext">
+              <button class="navArrow navArrow--white navArrowNext d-none d-sm-flex">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#slider-next"></use>
                 </svg>
@@ -1117,14 +1120,14 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex justify-content-between mt-5 px-5">
-              <button class="navArrow navArrow--white navArrowPrev">
+            <div class="d-flex justify-content-between mt-4 mt-lg-5 px-0 px-lg-5">
+              <button class="navArrow navArrow--white navArrowPrev d-none d-sm-flex">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#slider-prev"></use>
                 </svg>
               </button>
               <div class="swiper-pagination swiper-pagination--white"></div>
-              <button class="navArrow navArrow--white navArrowNext">
+              <button class="navArrow navArrow--white navArrowNext d-none d-sm-flex">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#slider-next"></use>
                 </svg>
@@ -1226,14 +1229,14 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex justify-content-between mt-5 px-5">
-              <button class="navArrow navArrow--white navArrowPrev">
+            <div class="d-flex justify-content-between mt-4 mt-lg-5 px-0 px-lg-5">
+              <button class="navArrow navArrow--white navArrowPrev d-none d-sm-flex">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#slider-prev"></use>
                 </svg>
               </button>
               <div class="swiper-pagination swiper-pagination--white"></div>
-              <button class="navArrow navArrow--white navArrowNext">
+              <button class="navArrow navArrow--white navArrowNext d-none d-sm-flex">
                 <svg>
                   <use xlink:href="img/icons/icons.svg#slider-next"></use>
                 </svg>

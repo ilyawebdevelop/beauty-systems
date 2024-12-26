@@ -645,6 +645,11 @@ const searchW = document.querySelector('.headerFixSearchW');
 // const menuSearchBtn = document.querySelector('.menuSearchBtn');
 const searchBtn = document.querySelector('.searchBtn');
 const headerFixCloseBtn = document.querySelector('.headerFixCloseBtn');
+let blogSearchBtn = document.querySelector('.blogSearchBtn');
+let blogSearchW = document.querySelector('.blogSearchW');
+let blogSort = document.querySelector('.blogSort');
+
+
 
 const toggleMenu = function () {
   menu.classList.toggle('active');
@@ -680,6 +685,11 @@ searchBtn?.addEventListener('click', function (e) {
 });
 headerFixCloseBtn?.addEventListener('click', function (e) {
   searchClose();
+});
+blogSearchBtn?.addEventListener('click', () => {
+  blogSearchBtn.classList.toggle('active');
+  blogSearchW.classList.toggle('active');
+  blogSort.classList.toggle('active');
 });
 
 function openSearch() {
