@@ -1187,14 +1187,32 @@ h6,
       margin-bottom: 40px;
     }
   }
+  &-sm-0 {
+    @media(max-width: 991px){
+      margin-bottom: 0;
+    }    
+  }
 }
 
 .mt-6 {
   margin-top: 60px;
+  &-sm-0 {
+    @media(max-width: 991px){
+      margin-top: 0;
+    }
+  }
+  &-sm-40 {
+    @media(max-width: 991px){
+      margin-top: 40px;
+    }
+  }
 }
 
 .pt-8 {
   padding-top: 80px;
+  @media(max-width: 991px){
+    padding-top: 60px;
+  }
 }
 
 .menuMobileFixed {

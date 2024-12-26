@@ -422,7 +422,7 @@ document.querySelectorAll('.priceSlider').forEach(n => {
       },
       768: {
         slidesPerView: 2,
-      }, 
+      },
       1200: {
         slidesPerView: 3,
       }
@@ -498,23 +498,27 @@ document.querySelectorAll('.reviewsSlider').forEach(n => {
   });
 });
 
-// Инициализация слайдера reviewsSliderSm
-document.querySelectorAll('.reviewsSliderSm').forEach(n => {
-  const mySwiperReviewsSm = new Swiper(n, {
-    slidesPerView: 3,
-    spaceBetween: 25,
-    speed: 600,
-    pagination: {
-      el: n?.querySelector('.swiper-pagination'),
-      clickable: true,
-      type: 'bullets',
-    },
-    navigation: {
-      prevEl: n.querySelector('.navArrowPrev'),
-      nextEl: n.querySelector('.navArrowNext'),
-    },
+const mediaQueryMin992 = window.matchMedia('(min-width: 992px)');
+if (mediaQueryMin992.matches) {
+  // Инициализация слайдера reviewsSliderSm
+  document.querySelectorAll('.reviewsSliderSm').forEach(n => {
+    const mySwiperReviewsSm = new Swiper(n, {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      speed: 600,
+      pagination: {
+        el: n?.querySelector('.swiper-pagination'),
+        clickable: true,
+        type: 'bullets',
+      },
+      navigation: {
+        prevEl: n.querySelector('.navArrowPrev'),
+        nextEl: n.querySelector('.navArrowNext'),
+      },
+    });
   });
-});
+}
+
 
 // loadmore text
 let jsShowMore = document.querySelectorAll('.js-show-more');
@@ -528,6 +532,7 @@ jsShowMore.forEach(el => {
 });
 
 const mediaQuery991 = window.matchMedia('(max-width: 991px)');
+
 if (mediaQuery991.matches) {
   // Инициализация слайдера reviewsSlider
   document.querySelectorAll('.advSlider').forEach(n => {
