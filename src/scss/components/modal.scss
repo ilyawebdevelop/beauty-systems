@@ -159,6 +159,9 @@
 
   .modalContent {
     padding: 120px;
+    @media(max-width: 767px){
+      padding: 60px 40px;
+    }
   }
 
   &>.f-button.is-close-btn {
@@ -171,6 +174,9 @@
 .authorizeLink {
   img {
     width: 64px;
+    @media(max-width: 575px){
+      width: 40px;
+    }
   }
 }
 
@@ -180,6 +186,9 @@
 
   .modalContent {
     padding: 120px;
+    @media(max-width: 767px){
+      padding: 40px;
+    }
   }
 
   &>.f-button.is-close-btn {
@@ -191,6 +200,9 @@
   .button {
     width: 220px;
     min-width: unset;
+    @media(max-width: 575px){
+      width: 100%;
+    }
   }
 }
 

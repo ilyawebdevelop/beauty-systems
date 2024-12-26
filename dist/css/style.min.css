@@ -16781,6 +16781,11 @@ h6--sm-h4,
 .modalAuthorize .modalContent {
   padding: 120px;
 }
+@media (max-width: 767px) {
+  .modalAuthorize .modalContent {
+    padding: 60px 40px;
+  }
+}
 .modalAuthorize > .f-button.is-close-btn {
   top: 15px;
   right: 15px;
@@ -16790,6 +16795,11 @@ h6--sm-h4,
 .authorizeLink img {
   width: 64px;
 }
+@media (max-width: 575px) {
+  .authorizeLink img {
+    width: 40px;
+  }
+}
 
 .modalLogout {
   width: 660px;
@@ -16797,6 +16807,11 @@ h6--sm-h4,
 }
 .modalLogout .modalContent {
   padding: 120px;
+}
+@media (max-width: 767px) {
+  .modalLogout .modalContent {
+    padding: 40px;
+  }
 }
 .modalLogout > .f-button.is-close-btn {
   top: 15px;
@@ -16806,6 +16821,11 @@ h6--sm-h4,
 .modalLogout .button {
   width: 220px;
   min-width: unset;
+}
+@media (max-width: 575px) {
+  .modalLogout .button {
+    width: 100%;
+  }
 }
 
 .modalReviewVideo {
