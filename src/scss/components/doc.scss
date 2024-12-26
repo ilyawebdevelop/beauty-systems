@@ -2,6 +2,11 @@
   &Image {
     width: 100%;
     height: auto;
+
+    @media(max-width: 575px) {
+      height: 85vw;
+      object-fit: cover;
+    }
   }
 
   &Finished {
@@ -21,6 +26,18 @@
         object-fit: cover;
         background-color: #fff;
         border-radius: 40px;
+
+        @media(max-width: 1199px) {
+          height: 450px;
+        }
+
+        @media(max-width: 991px) {
+          height: 450px;
+        }
+
+        @media(max-width: 575px) {
+          height: 85vw;
+        }
       }
     }
 
@@ -31,8 +48,17 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @media(max-width: 991px) {
+        padding-top: 20px;
+      }
+
       &T {
         padding-left: 40px;
+
+        @media(max-width: 991px) {
+          padding-left: 30px;
+          padding-right: 30px;
+        }
       }
 
       &B {
@@ -50,6 +76,10 @@
       font-size: 20px;
       line-height: 32px;
       letter-spacing: 1px;
+
+      @media(max-width: 991px) {
+        padding-left: 10px;
+      }
     }
 
     &Title {
@@ -68,6 +98,11 @@
 
     &Descr {
       margin-bottom: 12px;
+
+      @media(max-width: 991px) {
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
   }
 }
@@ -78,6 +113,10 @@
 
 .separateInput {
   width: 530px;
+
+  @media(max-width: 575px) {
+    width: 100%;
+  }
 }
 
 .docsSeparate {
@@ -88,6 +127,9 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-between;
+  @media(max-width: 991px){
+    padding: 30px;
+  }
 
   &Img {
     width: 80px;
@@ -105,6 +147,11 @@
     line-height: 32px;
     text-transform: uppercase;
 
+    @media(max-width: 991px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
     &:hover {
       color: var(--blue);
     }
@@ -115,6 +162,9 @@
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    @media(max-width: 991px){
+      font-size: 14px;
+    }
   }
 
   &Price {
@@ -124,10 +174,16 @@
     line-height: 32px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    @media(max-width: 575px){
+      margin-bottom: 20px;
+    }
   }
 
   &B {
     margin-top: 40px;
+    @media(max-width: 575px){
+      margin-top: 20px;
+    }
   }
 
   &Action {
@@ -144,6 +200,10 @@
   background: var(--Gray, #BCBCBC);
   margin-left: auto;
   margin-right: auto;
+  @media(max-width: 991px){
+    width: 120px;
+    height: 120px;
+  }
 }
 
 .docServiceW {
@@ -151,4 +211,16 @@
   border: 1px solid var(--white-06, rgba(255, 255, 255, 0.60));
   padding-top: 80px;
   padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media(max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.docTabs .searchInputW {
+  @media(max-width: 575px) {
+    width: 100%;
+  }
 }

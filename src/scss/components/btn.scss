@@ -385,3 +385,13 @@
     background-size: 20px;
   }
 }
+.docFinishedCardBtn {
+  @media(max-width: 991px){
+    height: 48px;
+  }
+}
+.docsSeparateBtn {
+  @media(max-width: 991px){
+    height: 48px;
+  }
+}

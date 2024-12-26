@@ -133,3 +133,18 @@
     }
   }
 }
+.docTabs {
+  .tabs__nav{
+    @media(max-width: 575px){
+      overflow-x: scroll;
+      width: calc(100% + 20px);
+      flex-wrap: nowrap;
+      margin-right: -20px;   
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .tabs__nav-btn{
+    white-space: nowrap;
+  }
+}
