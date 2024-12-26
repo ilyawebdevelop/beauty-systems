@@ -15806,6 +15806,13 @@ h4,
     letter-spacing: 0.48px;
   }
 }
+@media (max-width: 991px) {
+  h4.h4--sm-20,
+.h4.h4--sm-20 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
 
 .h5 {
   font-size: 18px;
@@ -16346,6 +16353,11 @@ h6--sm-h4,
 .button.min-w-unset {
   min-width: unset;
 }
+@media (max-width: 767px) {
+  .button-md-100 {
+    width: 100% !important;
+  }
+}
 
 @media (max-width: 575px) {
   .button--sm-100 {
@@ -16555,6 +16567,13 @@ h6--sm-h4,
 @media (max-width: 991px) {
   .docsSeparateBtn {
     height: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  .shareBtn {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -20247,6 +20266,12 @@ h6--sm-h4,
   flex-shrink: 0;
   margin-right: 17px;
 }
+@media (max-width: 991px) {
+  .commentImg {
+    width: 84px;
+    height: 84px;
+  }
+}
 
 .commentContent {
   row-gap: 10px;
@@ -20255,10 +20280,21 @@ h6--sm-h4,
   font-size: 18px;
   line-height: 32px;
 }
+@media (max-width: 575px) {
+  .commentContent .h5 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 
 .commentBtnW {
   width: 100%;
   margin-top: 90px;
+}
+@media (max-width: 991px) {
+  .commentBtnW {
+    margin-top: 40px;
+  }
 }
 .commentBtnW .button {
   width: 50%;
@@ -20274,6 +20310,12 @@ h6--sm-h4,
   border-radius: 50%;
   flex-shrink: 0;
 }
+@media (max-width: 575px) {
+  .commentItemPerson {
+    width: 42px;
+    height: 42px;
+  }
+}
 
 .commentItemContent {
   padding: 20px 32px;
@@ -20282,9 +20324,24 @@ h6--sm-h4,
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.12);
   width: 100%;
 }
+@media (max-width: 991px) {
+  .commentItemContent {
+    padding: 16px 20px;
+  }
+}
 
 .commentItem--pl {
   padding-left: 80px;
+}
+@media (max-width: 991px) {
+  .commentItem--pl {
+    padding-left: 48px;
+  }
+}
+@media (max-width: 575px) {
+  .commentItem--pl {
+    padding-left: 30px;
+  }
 }
 
 .likeBtn:hover svg {
@@ -20299,6 +20356,23 @@ h6--sm-h4,
   width: 20px;
   height: 20px;
   fill: white;
+}
+
+.commentBlockAction .button--round {
+  flex-shrink: 0;
+}
+
+.advSlider .articleEventSwiperWrapper {
+  flex-direction: column;
+  display: flex;
+}
+.advSlider .articleEventSwiperWrapper .introEventSlide {
+  background-image: none !important;
+}
+@media (max-width: 991px) {
+  .advSlider .articleEventSwiperWrapper {
+    flex-direction: row;
+  }
 }
 
 .docImage {

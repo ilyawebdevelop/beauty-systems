@@ -179,6 +179,11 @@
   &.min-w-unset {
     min-width: unset;
   }
+  &-md-100 {
+    @media(max-width: 767px){
+      width: 100%!important;
+    }
+  }
 }
 
 .button--sm-100 {
@@ -393,5 +398,11 @@
 .docsSeparateBtn {
   @media(max-width: 991px){
     height: 48px;
+  }
+}
+.shareBtn {
+  @media(max-width: 575px){
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

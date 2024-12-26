@@ -831,6 +831,12 @@ h4,
       letter-spacing: 0.48px;
     }
   }
+  &.h4--sm-20 {
+    @media(max-width: 991px){
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
 }
 
 .h5 {
