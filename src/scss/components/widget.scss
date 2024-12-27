@@ -23,6 +23,7 @@
   background: rgba(51, 51, 153, 0.20);
   border-radius: 50%;
   border: 1px solid rgba(51, 51, 153, 0.40);
+
   &.active {
     background: rgba(231, 231, 231, 0.30);
     padding-left: 24px;
@@ -66,8 +67,11 @@
       fill: #fff;
     }
   }
+
   &.active {
-    &::before,&::after {
+
+    &::before,
+    &::after {
       display: none;
     }
   }
@@ -77,6 +81,7 @@
   position: relative;
   z-index: 1;
   transition: background-color .2s linear;
+
   &.active {
     background-color: var(--gray2);
   }
@@ -86,17 +91,20 @@
   position: relative;
   z-index: 1;
   display: none;
+
   &.active {
     display: flex;
     -webkit-animation: shows 0.2s;
-    animation: shows 0.2s;    
+    animation: shows 0.2s;
   }
 }
+
 .widget-item {
   display: flex;
   align-items: center;
   column-gap: 8px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     display: none;
   }
 
@@ -104,6 +112,7 @@
     border-radius: 44px;
   }
 }
+
 .widgetLink {
   width: 40px;
   height: 40px;
@@ -112,6 +121,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color .2s linear;
+
   &.bg--blue {
     &:hover {
       background-color: var(--tetriary);
@@ -124,9 +134,11 @@
     padding-left: 8px;
     column-gap: 8px;
   }
+
   img {
     width: 24px;
   }
+
   span {
     color: #fff;
   }
@@ -136,3 +148,61 @@
   }
 }
 
+.widget-cart {
+  position: fixed;
+  bottom: 143px;
+  right: 35px;
+  z-index: 11;
+ 
+  cursor: pointer;
+  &-price {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .widget-action {
+    border-radius: 44px;
+    border: 1px solid rgba(51, 51, 153, 0.40);
+    background: rgba(51, 51, 153, 0.20);
+    padding: 16px;
+    width: 270px;
+    position: absolute;
+    right: calc(100% + 20px);
+    bottom: 0;
+  }
+}
+
+.widget-cart-btn {
+  height: 56px;
+  background: var(--White, #FFF);
+  border-radius: 28px;
+  svg {
+    fill: var(--blue);
+    width: 24px;
+    height: 24px;
+  }
+}
+.widget-cart-btn-w{
+  border-radius: 44px;
+  border: 1px solid rgba(51, 51, 153, 0.40);
+  background: rgba(51, 51, 153, 0.20);  
+  padding: 16px;
+}
+.widget-cart-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #F2F2F2 0%, #E5E5E5 100%);
+  padding: 16px;
+  width: 100%;
+
+  svg {
+    fill: var(--blue);
+    width: 24px;
+    height: 24px;
+    margin-bottom: 20px;
+  }
+}

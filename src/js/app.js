@@ -742,5 +742,7 @@ function toggleShowWidget(array) {
   });
 }
 let widgetBtnArray = document.querySelectorAll('.widget-btn');
+let widgetCartBtnArray = document.querySelectorAll('.widget-cart-btn');
 
 toggleShowWidget(widgetBtnArray);
+toggleShowWidget(widgetCartBtnArray);
