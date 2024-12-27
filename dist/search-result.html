@@ -2250,7 +2250,6 @@
   </div>
 </div>
 
-
 <!-- call -->
 <div class="modal modalCall bg--black border--gray" id="modalCall">
 
@@ -2282,6 +2281,224 @@
     <button class="button button--blue mt-4 w-100">
       Отправить
     </button>
+  </div>
+</div>
+
+<!-- default -->
+<div class="modal modalDefault p-0" id="modalDefault">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <h2 class="h3 color--white text-uppercase mb-4">Получите каталог оборудования с актуальными ценами в течение 5
+        минут!</h2>
+
+      <form class="modalForm" action="#">
+
+        <div class="inputW">
+          <input type="tel" class="formInput formInput--bg-white-005" id="modalHelpPhone"
+            placeholder="+7 (____) ___ __-__">
+        </div>
+
+        <div class="agreement mt-4">
+          <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+          <label class="checkboxLabel align-items-start" for="catalogGet_form">
+            <span class="rect rect--gray2"></span>
+            <div class="agreementText text--sm" style="max-width: 325px;">
+              Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+            </div>
+
+          </label>
+        </div>
+
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Скачать каталог
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/catalog.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- subscribe -->
+<div class="modal modalDefault p-0" id="modalSubscribe">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <h2 class="h3 color--white text-uppercase mb-4">Добро пожаловать!</h2>
+      <p class="modalDescr color--white mb-4 pb-2">Подпишитесь на рассылку и получайте каждую неделю эксклюзивные
+        материалы для косметологов и врачей. Будьте в курсе последних тенденций!
+      </p>
+      <form class="modalForm" action="#">
+
+        <div class="inputW">
+          <input type="email" class="formInput formInput--bg-white-005" id="modalHelpPhone" placeholder="Email">
+        </div>
+
+        <div class="agreement mt-4">
+          <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+          <label class="checkboxLabel align-items-start" for="catalogGet_form">
+            <span class="rect rect--gray2"></span>
+            <div class="agreementText text--sm" style="max-width: 325px;">
+              Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+            </div>
+          </label>
+        </div>
+
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Получать материалы
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/subscribe.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- learn -->
+<div class="modal modalDefault p-0" id="modalWebinar">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <h2 class="h3 color--white text-uppercase mb-4">Хотите узнать …?</h2>
+      <p class="modalDescr color--white mb-4">
+        Зарегистрируйтесь на бесплатный вебинар
+      </p>
+      <div class="text--xxl text--xxl-sm-lg fw-medium mb-4">
+        Команда мечты в бьюти-индустрии
+      </div>
+      <form class="modalForm" action="#">
+
+
+        <div class="d-flex flex-wrap gap-2">
+          <div class="text--xs modalTag fw-medium">
+            14 августа
+          </div>
+          <div class="text--xs modalTag">
+            12:00 (МСК)
+          </div>
+        </div>
+
+
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Зарегистрироваться
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/webinar.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- spec -->
+<div class="modal modalDefault p-0" id="modalSpec">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <div class="d-flex gap-2">
+        <span class="h3">🔥</span>
+        <h2 class="h3 color--white text-uppercase mb-2"> Специальное предложение!</h2>
+      </div>
+
+      <p class="text-lg text-lg-sm-md color--white mb-4">
+        Оставьте заявку сегодня и получите <strong>3% скидку</strong> на покупку аппарата <strong>«Antige»</strong>
+      </p>
+
+      <form class="modalForm" action="#">
+        <div class="inputW">
+          <input type="tel" class="formInput formInput--bg-white-005" id="modalHelpPhone"
+            placeholder="+7 (____) ___ __-__">
+        </div>
+        <div class="agreement mt-4">
+          <input type="checkbox" class="checkboxInput" id="catalogGet_form" checked>
+          <label class="checkboxLabel align-items-start" for="catalogGet_form">
+            <span class="rect rect--gray2"></span>
+            <div class="agreementText text--sm" style="max-width: 325px;">
+              Соглашаюсь на <a href="#" target="_blank">обработку персональных данных</a>
+            </div>
+          </label>
+        </div>
+        <button class="button button--blue formBtn width-sm-100 text-nowrap mt-4">
+          Оставить заявку
+        </button>
+      </form>
+    </div>
+    <img src="img/admin/modal/subscribe.png" alt="image" class="modalHelpImg d-none d-lg-block">
+  </div>
+</div>
+
+<!-- thanks -->
+<div class="modal modalDefault p-0" id="modalThanks">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="d-flex modalHelpW">
+    <div class="modalHelpContent bg--black">
+      <div class="d-flex gap-2">
+        <h2 class="h3 color--white text-uppercase mb-2"> Спасибо!</h2>
+      </div>
+      <div class="text-lg text-lg-sm-md mb-6">
+        Мы скоро с Вами свяжемся!
+      </div>
+      <div class="h5 text-uppercase fw-medium mb-3">
+        Время работы отдела продаж:
+      </div>
+      <div class="text-xl mb-4 pb-3">
+        Пн-Пт с 09.00 до 19.00 (по Москве)
+      </div>
+      <div class="h5 text-uppercase fw-medium mb-4">
+        Подпишитесь на наши соц. сети:
+      </div>
+      <div class="d-flex gap-3 flex-wrap">
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/vk.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/telegram.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/dzen.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/youtube.svg" alt="icon">
+        </a>
+        <a class="d-flex flex-column flex-lg-row gap-2 gap-lg-3 align-items-center modalSocialsLink" href="#"
+          target="_blank">
+          <img src="img/admin/socials/rutube.svg" alt="icon">        
+        </a>
+      </div>
+
+    </div>
+    <img src="img/admin/modal/subscribe.png" alt="image" class="modalHelpImg d-none d-lg-block">
   </div>
 </div>
 	</div>

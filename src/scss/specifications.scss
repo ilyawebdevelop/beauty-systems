@@ -610,6 +610,12 @@ table {
   &-lg {
     font-size: 20px;
     line-height: 30px;
+    &-sm-md {
+      @media(max-width: 991px){
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
   }
 
   &-xl {
