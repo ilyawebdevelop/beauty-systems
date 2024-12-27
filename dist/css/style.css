@@ -21236,9 +21236,6 @@ h6--sm-h4,
   cursor: pointer;
   transition: transform 0.2s linear, width 0.2s linear, height 0.2s linear;
 }
-.widget-video:hover {
-  transform: scale(1.05) translate(5px, -5px);
-}
 @media (max-width: 991px) {
   .widget-video {
     display: none;
@@ -21281,9 +21278,6 @@ h6--sm-h4,
   width: 300px;
   height: 500px;
 }
-.widget-video.active:hover {
-  transform: translate(5px, -5px);
-}
 .widget-video.active .mejs__video {
   width: 300px;
   height: 500px;
@@ -21305,6 +21299,13 @@ h6--sm-h4,
 }
 .widget-video.active .widget-video-btn {
   display: none;
+}
+
+.widget-video-remove {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  pointer-events: none;
 }
 
 .footerT {
