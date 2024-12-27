@@ -15239,6 +15239,7 @@ table {
 @media (max-width: 991px) {
   .searchInputW input {
     font-size: 16px;
+    padding-right: 42px;
   }
 }
 .searchInputW input::placeholder {
@@ -15277,6 +15278,11 @@ table {
   width: 640px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 767px) {
+  .searchW--error {
+    width: 100%;
+  }
 }
 .searchW--error .searchInputW {
   width: 100%;
@@ -15402,7 +15408,7 @@ table {
 @media (max-width: 991px) {
   .formSelect {
     font-size: 16px;
-    padding-left: 25px;
+    padding-left: 20px;
   }
 }
 .formSelect option {
@@ -16209,6 +16215,20 @@ h6--sm-h4,
   fill: #fff;
   width: 30px;
   height: 24px;
+}
+
+@media (max-width: 991px) {
+  .errorImg {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .errorImg {
+    height: 80vw;
+  }
 }
 
 .button {

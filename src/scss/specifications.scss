@@ -206,6 +206,7 @@ table {
 
     @media(max-width: 991px) {
       font-size: 16px;
+      padding-right: 42px;
     }
 
     &::placeholder {
@@ -267,6 +268,9 @@ table {
   width: 640px;
   margin-left: auto;
   margin-right: auto;
+  @media(max-width: 767px){
+    width: 100%;
+  }
 
   .searchInputW {
     width: 100%;
@@ -407,7 +411,7 @@ table {
   background-position: right 28px center;
   @media(max-width: 991px){
     font-size: 16px;
-    padding-left: 25px;
+    padding-left: 20px;
   }
 
   option {
@@ -1279,5 +1283,16 @@ h6,
       width: 30px;
       height: 24px;
     }
+  }
+}
+.errorImg {
+  @media(max-width: 991px){
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 40px;
+  }
+  @media(max-width: 575px){
+    height: 80vw;
   }
 }
