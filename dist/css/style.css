@@ -16898,9 +16898,25 @@ h6--sm-h4,
   }
 }
 
-.modalCatalog {
+.modalCatalog, .modalCall {
   width: 480px;
   padding: 60px;
+}
+@media (max-width: 767px) {
+  .modalCatalog, .modalCall {
+    padding: 40px;
+  }
+}
+.modalCatalog > .f-button.is-close-btn, .modalCall > .f-button.is-close-btn {
+  top: 15px;
+  right: 15px;
+  color: var(--white-08);
+}
+@media (max-width: 991px) {
+  .modalCatalog > .f-button.is-close-btn, .modalCall > .f-button.is-close-btn {
+    top: 5px;
+    right: 5px;
+  }
 }
 
 .breadcrumbs {

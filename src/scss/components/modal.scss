@@ -239,7 +239,19 @@
     }
   }
 }
-.modalCatalog {
+.modalCatalog, .modalCall {
   width: 480px;
   padding: 60px;
+  @media(max-width: 767px){
+    padding: 40px;
+  }
+  &>.f-button.is-close-btn {
+    top: 15px;
+    right: 15px;
+    color: var(--white-08);
+    @media(max-width: 991px){
+      top: 5px;
+      right: 5px;
+    }
+  }
 }
