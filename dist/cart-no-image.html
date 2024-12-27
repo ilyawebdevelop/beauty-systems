@@ -904,10 +904,17 @@
 </div>
 
 <!-- widget-video -->
-<div class="widget-video" data-fancybox data-src="#modalVideo">
+<div class="widget-video">
   <img class="widget-video-img" src="img/admin/widget/video.png" alt="image">
   <div class="widget-video-btn">
     <img src="img/icons/play-white.svg" alt="icon">
+  </div>
+  <div class="player widget-video-player">
+    <video id="player-widget" class="" controls="false" preload="none" poster="">
+      <source src="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+        type="video/mp4">
+      <!-- Just add multiple <track> files, they get integrated automatically -->
+    </video>
   </div>
 </div>
 		<!-- modal -->
@@ -1174,6 +1181,39 @@
       От мастера маникюра до собственной клиники | ЛЭ это прибыльно От мастера маникюра до собственной клиники | ЛЭ это
       прибыльно От мастера маникюра до собственной клиники | ЛЭ это прибыльно
     </p>
+  </div>
+</div>
+
+
+<!-- catalog -->
+<div class="modal modalCatalog bg--black border--gray" id="modalCatalog">
+
+  <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24" tabindex="-1">
+      <path d="M20 20L4 4m16 0L4 20"></path>
+    </svg>
+  </button>
+
+  <div class="modalContent">
+    <div class="mb-4 pb-3">
+      <h3 class="h3 fw-normal text-uppercase text--white text-center">
+        Войдите, чтобы комменТИровать:
+      </h3>
+    </div>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/yandex.svg" alt="icon">
+      </a>
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/google.svg" alt="icon">
+      </a>
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/vk-color.svg" alt="icon">
+      </a>
+      <a href="#" class="authorizeLink" target="_blank">
+        <img src="img/admin/socials/ok-color.svg" alt="icon">
+      </a>
+    </div>
 
   </div>
 

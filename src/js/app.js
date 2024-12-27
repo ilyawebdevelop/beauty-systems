@@ -30,6 +30,7 @@ let dp = new AirDatepicker('#calendarEl', {
   }
 });
 
+
 // get selectedDates Array;
 // let dpSelectedArray = ;
 if (document.querySelector('#calendarEl')) {
@@ -633,6 +634,7 @@ window.onload = function () {
       stickyHeader.classList.remove('fixed');
     }
   };
+
 };
 
 
@@ -729,16 +731,16 @@ document.addEventListener('click', e => {
 
 });
 
-
+// open and close widget
 function toggleShowWidget(array) {
   array.forEach(el => {
     let parent = el.closest('.widget-item');
-    let action = parent.querySelector('.widget-action');   
+    let action = parent.querySelector('.widget-action');
     el.addEventListener('click', () => {
       action.classList.toggle('active');
       parent.classList.toggle('active');
       el.classList.toggle('active');
-    });   
+    });
   });
 }
 let widgetBtnArray = document.querySelectorAll('.widget-btn');
@@ -746,3 +748,13 @@ let widgetCartBtnArray = document.querySelectorAll('.widget-cart-btn');
 
 toggleShowWidget(widgetBtnArray);
 toggleShowWidget(widgetCartBtnArray);
+
+let widgetVideo = document.querySelector('.widget-video');
+
+
+widgetVideo.addEventListener('click', () => {
+  widgetVideo.classList.toggle('active');
+  let playerCaptions = document.querySelector('#player-widget');
+  playerCaptions.play();
+
+});

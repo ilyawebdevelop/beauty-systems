@@ -288,9 +288,16 @@
 </div>
 
 <!-- widget-video -->
-<div class="widget-video" data-fancybox data-src="#modalVideo">
+<div class="widget-video">
   <img class="widget-video-img" src="@img/admin/widget/video.png" alt="image">
   <div class="widget-video-btn">
     <img src="@img/icons/play-white.svg" alt="icon">
+  </div>
+  <div class="player widget-video-player">
+    <video id="player-widget" class="" controls="false" preload="none" poster="">
+      <source src="//github.com/mediaelement/mediaelement-files/blob/master/big_buck_bunny.mp4?raw=true"
+        type="video/mp4">
+      <!-- Just add multiple <track> files, they get integrated automatically -->
+    </video>
   </div>
 </div>
