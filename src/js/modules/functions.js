@@ -29,4 +29,5 @@ import GraphTabs from 'graph-tabs';
 	const tabs = new GraphTabs('popup');
 	const tabs_2 = new GraphTabs('popup_2');
 	const tabs_3 = new GraphTabs('popup_3');
+	const tabs_4 = new GraphTabs('popup_4');
 

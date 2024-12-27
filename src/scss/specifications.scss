@@ -296,6 +296,9 @@ table {
       width: 100%;
     }
   }
+  .searchSelect{
+    flex-shrink: 0;
+  }
 }
 
 .form-floating>label {
@@ -402,6 +405,7 @@ table {
   font-size: 14px;
   color: var(--gray);
   transition: border-color .2s linear, background-image .2s linear, color .2s linear;
+  flex-shrink: 0;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;

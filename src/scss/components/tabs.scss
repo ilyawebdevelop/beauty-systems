@@ -35,12 +35,12 @@
     width: 100%;
     padding-left: 16px;
     flex-wrap: wrap;
-   
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       margin-left: -20px;
       margin-right: -20px;
-      width: auto;    
-      overflow-x: scroll; 
+      width: auto;
+      overflow-x: scroll;
     }
   }
 
@@ -88,11 +88,13 @@
   }
 }
 
-.cartTabs, .eventsTabs {
+.cartTabs,
+.eventsTabs {
   .tabs__nav {
     border-radius: 32px;
     border: 1px solid var(--Gray, #BCBCBC);
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       margin-left: auto;
       margin-right: auto;
     }
@@ -103,6 +105,7 @@
     height: 40px;
     font-size: 14px;
     transition: background-color .2s linear, color .2s linear;
+
     &:hover {
       background-color: var(--white);
     }
@@ -114,37 +117,75 @@
     }
   }
 }
+
 .eventsTabs {
   .tabs__nav {
     border-color: var(--gray2);
   }
+
   .tabs__nav-btn {
     border: 1px solid var(--white-02);
+
     &:hover {
       color: var(--black);
     }
   }
 }
+
 .blogTabs {
   .tabs__nav {
-    @media(max-width: 991px){
+    @media(max-width: 991px) {
       margin-left: unset;
       margin-right: unset;
     }
   }
 }
+
 .docTabs {
-  .tabs__nav{
-    @media(max-width: 575px){
+  .tabs__nav {
+    @media(max-width: 575px) {
       overflow-x: scroll;
       width: calc(100% + 20px);
       flex-wrap: nowrap;
-      margin-right: -20px;   
+      margin-right: -20px;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
   }
-  .tabs__nav-btn{
+
+  .tabs__nav-btn {
+    white-space: nowrap;
+  }
+}
+
+.search-resultTabs {
+  .tabs__nav {
+    margin-left: unset;
+    margin-right: unset;
+    @media(max-width: 575px) {
+      flex-wrap: nowrap;
+      width: fit-content;
+    }
+  }
+  &-scroll {
+    .tabs__nav {
+
+
+      @media(max-width: 575px) {
+        overflow-x: scroll;
+        width: calc(100% + 20px);
+        margin-right: -20px;
+        padding-right: 40px;
+        border-right: transparent;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+
+
+
+  .tabs__nav-btn {
     white-space: nowrap;
   }
 }
