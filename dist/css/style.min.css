@@ -21086,6 +21086,54 @@ h6--sm-h4,
   margin-bottom: 20px;
 }
 
+.widget-catalog {
+  border-radius: 20px;
+  background: linear-gradient(180deg, #F2F2F2 72.98%, #E5E5E5 100%);
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  width: 127px;
+  position: fixed;
+  bottom: 163px;
+  left: 35px;
+  z-index: 11;
+  padding: 8px 11px 12px;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .widget-catalog {
+    display: none;
+  }
+}
+.widget-catalog-img {
+  width: 77px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.widget-catalog-btn {
+  border-radius: 50%;
+  background-color: var(--blue);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -20px;
+  z-index: 1;
+  position: relative;
+}
+.widget-catalog-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+.widget-catalog-text {
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
 .footerT {
   padding-bottom: 100px;
   padding-top: 80px;
