@@ -728,3 +728,19 @@ document.addEventListener('click', e => {
   }
 
 });
+
+
+function toggleShowWidget(array) {
+  array.forEach(el => {
+    let parent = el.closest('.widget-item');
+    let action = parent.querySelector('.widget-action');   
+    el.addEventListener('click', () => {
+      action.classList.toggle('active');
+      parent.classList.toggle('active');
+      el.classList.toggle('active');
+    });   
+  });
+}
+let widgetBtnArray = document.querySelectorAll('.widget-btn');
+
+toggleShowWidget(widgetBtnArray);

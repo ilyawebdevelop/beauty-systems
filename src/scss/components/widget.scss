@@ -1,0 +1,138 @@
+@keyframes animateBtn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+.widget-phone {
+  position: fixed;
+  z-index: 11;
+  bottom: 30px;
+  right: 35px;
+  padding: 16px;
+  background: rgba(51, 51, 153, 0.20);
+  border-radius: 50%;
+  border: 1px solid rgba(51, 51, 153, 0.40);
+  &.active {
+    background: rgba(231, 231, 231, 0.30);
+    padding-left: 24px;
+    border-color: rgba(92, 92, 92, 0.30);
+  }
+
+  &::after {
+    animation-delay: .5s;
+  }
+
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid var(--white-02);
+    /*цвет анимированных волн от кнопки*/
+    left: -10px;
+    right: -10px;
+    top: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    animation: animateBtn 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden;
+  }
+
+  &-btn {
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+
+    svg {
+      width: 24px;
+      height: 24px;
+      fill: #fff;
+    }
+  }
+  &.active {
+    &::before,&::after {
+      display: none;
+    }
+  }
+}
+
+.widget-btn {
+  position: relative;
+  z-index: 1;
+  transition: background-color .2s linear;
+  &.active {
+    background-color: var(--gray2);
+  }
+}
+
+.widget-action {
+  position: relative;
+  z-index: 1;
+  display: none;
+  &.active {
+    display: flex;
+    -webkit-animation: shows 0.2s;
+    animation: shows 0.2s;    
+  }
+}
+.widget-item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  @media(max-width: 991px){
+    display: none;
+  }
+
+  &.active {
+    border-radius: 44px;
+  }
+}
+.widgetLink {
+  width: 40px;
+  height: 40px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .2s linear;
+  &.bg--blue {
+    &:hover {
+      background-color: var(--tetriary);
+    }
+  }
+
+  &--text {
+    width: unset;
+    padding-right: 16px;
+    padding-left: 8px;
+    column-gap: 8px;
+  }
+  img {
+    width: 24px;
+  }
+  span {
+    color: #fff;
+  }
+
+  &.bg--blue {
+    background-color: var(--blue);
+  }
+}
+
