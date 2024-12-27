@@ -1,10 +1,22 @@
 .req {
   &W {
     padding: 60px 40px;
+    @media(max-width: 575px){
+      padding: 40px;
+    }
+    @media(max-width: 370px){
+      padding: 40px 30px;
+    }
   }
   &Item {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    &:not(:last-child){
+      @media(max-width: 991px){
+        margin-bottom: 40px;
+      }
+    }
+   
     &L {
       grid-column: 4 span;
       border-bottom: 1px solid var(--Gray, #BCBCBC);
@@ -12,6 +24,15 @@
       padding-bottom: 24px;
       padding-right: 50px;
       padding-top: 24px;
+      @media(max-width: 1199px){
+        padding-right: 30px;
+      }
+      @media(max-width: 991px){
+        grid-column: 12 span;
+        border-right: none;
+        padding-right: 0;
+        padding-top: 0;
+      }
     }
     &R {
       grid-column: 8 span;
@@ -19,6 +40,14 @@
       padding-left: 80px;
       padding-bottom: 24px;
       padding-top: 24px;
+      @media(max-width: 1199px){
+        padding-left: 30px;
+      }
+      @media(max-width: 991px){
+        grid-column: 12 span;
+        padding-left: 0;
+        border-bottom: none;
+      }
     }
     &Title {
       color: var(--Primary, #000);
@@ -26,6 +55,10 @@
       font-weight: 500;
       line-height: 32px; 
       text-transform: uppercase;      
+      @media(max-width: 991px){
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -33,6 +66,9 @@
   width: 24px;
   flex-shrink: 0;
   margin-right: 20px;
+  @media(max-width: 370px){
+    margin-right: 10px;
+  }
 }
 .reqItemLink {
   color: var(--blue);

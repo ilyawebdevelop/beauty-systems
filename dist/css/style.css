@@ -20621,22 +20621,53 @@ h6--sm-h4,
   background-color: var(--blue);
   padding: 80px 60px;
 }
+@media (max-width: 991px) {
+  .contactsOrder {
+    padding: 40px;
+  }
+}
 
 .contactsOrderFormGrid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 10px;
 }
+@media (max-width: 991px) {
+  .contactsOrderFormGrid {
+    column-gap: 0;
+    row-gap: 10px;
+  }
+}
 .contactsOrderForm .inputW {
   grid-column: 4 span;
+}
+@media (max-width: 991px) {
+  .contactsOrderForm .inputW {
+    grid-column: 12 span;
+  }
 }
 
 .reqW {
   padding: 60px 40px;
 }
+@media (max-width: 575px) {
+  .reqW {
+    padding: 40px;
+  }
+}
+@media (max-width: 370px) {
+  .reqW {
+    padding: 40px 30px;
+  }
+}
 .reqItem {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+}
+@media (max-width: 991px) {
+  .reqItem:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 .reqItemL {
   grid-column: 4 span;
@@ -20646,12 +20677,37 @@ h6--sm-h4,
   padding-right: 50px;
   padding-top: 24px;
 }
+@media (max-width: 1199px) {
+  .reqItemL {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .reqItemL {
+    grid-column: 12 span;
+    border-right: none;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
 .reqItemR {
   grid-column: 8 span;
   border-bottom: 1px solid var(--Gray, #BCBCBC);
   padding-left: 80px;
   padding-bottom: 24px;
   padding-top: 24px;
+}
+@media (max-width: 1199px) {
+  .reqItemR {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 991px) {
+  .reqItemR {
+    grid-column: 12 span;
+    padding-left: 0;
+    border-bottom: none;
+  }
 }
 .reqItemTitle {
   color: var(--Primary, #000);
@@ -20660,11 +20716,22 @@ h6--sm-h4,
   line-height: 32px;
   text-transform: uppercase;
 }
+@media (max-width: 991px) {
+  .reqItemTitle {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
 
 .reqItemIcon {
   width: 24px;
   flex-shrink: 0;
   margin-right: 20px;
+}
+@media (max-width: 370px) {
+  .reqItemIcon {
+    margin-right: 10px;
+  }
 }
 
 .reqItemLink {
@@ -20694,9 +20761,22 @@ h6--sm-h4,
   color: var(--blue);
 }
 
+.map {
+  padding-bottom: 60px;
+}
+@media (max-width: 991px) {
+  .map {
+    padding-bottom: 20px;
+  }
+}
 .map iframe {
   height: 540px;
   width: 100%;
+}
+@media (max-width: 991px) {
+  .map iframe {
+    height: 400px;
+  }
 }
 
 .mapAction iframe {
@@ -20705,6 +20785,18 @@ h6--sm-h4,
 
 .mapIframe.onScroll {
   pointer-events: all;
+}
+
+@media (max-width: 991px) {
+  .office {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .office .reqItemIcon {
+    margin-right: 0;
+    width: 32px;
+  }
 }
 
 .resultBlock {
