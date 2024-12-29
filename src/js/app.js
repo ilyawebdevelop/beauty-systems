@@ -83,7 +83,23 @@ eventRegisterClose?.addEventListener('click', () => {
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar]);
 
-
+// Wrap every letter in a span
+// var textWrapper = document.querySelector('.introSlideTitleBottom .h1');
+// textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+// anime.timeline({ loop: false })
+//   .add({
+//     targets: '.introSlideTitleBottom .letter',
+//     opacity: [0, 1],
+//     easing: "easeInOutQuad",
+//     duration: 2250,
+//     delay: (el, i) => 150 * (i + 1)
+//   }).add({
+//     targets: '.introSlideTitleBottom .h1',
+//     opacity: 0,
+//     duration: 1000,
+//     easing: "easeOutExpo",
+//     delay: 1000
+//   });
 // Инициализация слайдера introSlider
 const introSlider = document.querySelector('.introSlider');
 var mySwiperIntro = new Swiper(introSlider, {
@@ -92,9 +108,37 @@ var mySwiperIntro = new Swiper(introSlider, {
   spaceBetween: 10,
   effect: 'fade',
   loop: true,
-  autoplay: {
-    delay: 5000,
+  on: {
+    slideChange: function () {
+      const index_activeSlide = this.activeIndex;
+      const index_realSlide = this.realIndex;
+      const activeSlide = this.slides[index_activeSlide];
+      const realSlide = this.slides[index_realSlide];
+      // Wrap every letter in a span
+      let textWrapper = activeSlide.querySelector('.introSlideTitleBottom .h1');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      anime.timeline({ loop: false })
+        .add({
+          targets: activeSlide.querySelectorAll('.introSlideTitleBottom .h1 .letter'),
+          opacity: [0, 1],
+          easing: "easeInOutQuad",
+          duration: 550,
+          delay: (el, i) => 150 * (i + 1)
+        });
+
+      anime.timeline({ loop: false })
+        .add({
+          targets: realSlide.querySelectorAll('.introSlideTitleBottom .h1 .letter'),
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });
+    },
   },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   fadeEffect: {
     crossFade: true
   },
@@ -768,3 +812,5 @@ widgetVideo.addEventListener('click', () => {
   playerCaptions.play();
 
 });
+
+

@@ -31,11 +31,12 @@
         }
 
         @media(max-width: 991px) {
-          max-width: 195px; 
+          max-width: 195px;
           position: relative;
         }
+
         &::before {
-          @media(max-width: 991px){
+          @media(max-width: 991px) {
             content: '';
             position: absolute;
             width: 100%;
@@ -52,7 +53,7 @@
 
       .introSlideTitleBottom {
         margin-left: 60px;
-      
+
         @media(max-width: 991px) {
           margin-left: 30px;
         }
@@ -132,7 +133,7 @@
           margin-left: 0;
         }
       }
-     
+
     }
 
     .h1 {
@@ -317,11 +318,18 @@
     }
   }
 }
+
 .introSlideTitleBottom {
-  animation: typing 1s forwards;
-  width: 0;
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  overflow: hidden;
+  position: relative;
+  display: inline-flex!important;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  .h1 {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+    // font-size: 3.5em;
+  }
 }
