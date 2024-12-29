@@ -16953,7 +16953,6 @@ h6--sm-h4,
 .modalDefault {
   width: 1080px;
   overflow: visible;
-  border: 1px solid var(--Gray2, #5C5C5C);
 }
 .modalDefault > .f-button.is-close-btn {
   top: -34px;
@@ -18222,6 +18221,8 @@ h6--sm-h4,
   color: #fff;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
 }
 @media (max-width: 991px) {
   .telegramCardContent {
@@ -18243,6 +18244,11 @@ h6--sm-h4,
 }
 .telegramCardTitle:hover {
   color: var(--blue);
+}
+
+.telegramSlide {
+  display: flex;
+  flex-direction: column;
 }
 
 .videoImg {
@@ -21012,7 +21018,7 @@ h6--sm-h4,
   border: 1px solid rgba(51, 51, 153, 0.4);
 }
 .widget-phone.active {
-  background: rgba(231, 231, 231, 0.3);
+  background: rgba(231, 231, 231, 0.8);
   padding-left: 24px;
   border-color: rgba(92, 92, 92, 0.3);
 }
@@ -21235,6 +21241,9 @@ h6--sm-h4,
   height: 125px;
   cursor: pointer;
   transition: transform 0.2s linear, width 0.2s linear, height 0.2s linear;
+}
+.widget-video:hover {
+  transform: scale(1.05) translate(5px, -5px);
 }
 @media (max-width: 991px) {
   .widget-video {
