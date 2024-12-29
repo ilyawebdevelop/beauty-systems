@@ -51,11 +51,12 @@
       }
 
       .introSlideTitleBottom {
+        margin-left: 60px;
+      
         @media(max-width: 991px) {
           margin-left: 30px;
         }
       }
-
     }
 
     &--third {
@@ -115,8 +116,8 @@
     &Title {
       &W {
         max-width: 830px;
-        margin-left: auto;
-        margin-right: 200px;
+        margin-left: 500px;
+        // margin-right: 200px;
 
         @media(max-width: 1700px) {
           margin-right: unset;
@@ -131,6 +132,7 @@
           margin-left: 0;
         }
       }
+     
     }
 
     .h1 {
@@ -314,4 +316,12 @@
       }
     }
   }
+}
+.introSlideTitleBottom {
+  animation: typing 1s forwards;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }

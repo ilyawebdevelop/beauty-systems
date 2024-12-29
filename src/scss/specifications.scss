@@ -519,7 +519,8 @@ table {
   padding-left: 20px;
   font-size: 14px;
   padding-right: 35px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     font-size: 16px;
     padding-left: 26px;
   }
@@ -545,8 +546,9 @@ table {
   color: var(--gray);
   font-size: 14px;
   padding-left: 20px;
-  @media(max-width: 991px){
-  font-size: 16px;
+
+  @media(max-width: 991px) {
+    font-size: 16px;
   }
 }
 
@@ -566,9 +568,11 @@ table {
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: var(--blue);
 }
+
 .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow {
   background-image: url('@img/icons/arrow-down-blue.svg');
 }
+
 .agreement {
   input {
     display: none;
@@ -915,6 +919,13 @@ h3,
       font-size: 28px;
       line-height: 36px;
       letter-spacing: 1.4px;
+    }
+  }
+
+  &.text--white-08 {
+    color: var(--white-08);
+    span {
+      color: #fff;
     }
   }
 }
