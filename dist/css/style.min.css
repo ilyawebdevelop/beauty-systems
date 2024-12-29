@@ -16016,6 +16016,7 @@ h6--sm-h4,
 
 .galLgImg {
   position: relative;
+  display: block;
 }
 .galLgImg:hover {
   opacity: 0.9;
@@ -16098,7 +16099,7 @@ h6--sm-h4,
 }
 .galLgVideoBtn img {
   width: 50px;
-  height: fit-content;
+  height: auto;
 }
 @media (max-width: 1199px) {
   .galLgVideoBtn img {

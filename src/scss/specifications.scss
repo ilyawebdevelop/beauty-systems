@@ -1082,6 +1082,7 @@ h6,
 
 .galLgImg {
   position: relative;
+  display: block;
 
   &:hover {
     opacity: .9;
@@ -1172,7 +1173,7 @@ h6,
 
   img {
     width: 50px;
-    height: fit-content;
+    height: auto;
     @media(max-width: 1199px){
       width: 20px;
     }
