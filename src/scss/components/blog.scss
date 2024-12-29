@@ -210,15 +210,18 @@
   }
 }
 
-.blogSort {
+.blogSort+.select2 {
   @media(max-width: 991px) {
     display: none;
     position: absolute;
     top: 130px;
     left: 0;
-    width: 100%;
+    width: 100%!important;
     z-index: 1;
-    background-color: #000000;
+    background-color: var(--black);
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    border-radius: 27px;
   }
 
   &.active {

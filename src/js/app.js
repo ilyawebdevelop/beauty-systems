@@ -3,6 +3,7 @@ import "./modules/jquery-3.7.1.min.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import AirDatepicker from 'air-datepicker';
 import "./modules/bootstrap.bundle.min.js";
+import "./modules/select2.min.js";
 import './components.js';
 
 flsFunctions.isWebp();
@@ -11,6 +12,10 @@ Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
 
+
+$(document).ready(function () {
+  $('.formSelect').select2();
+});
 
 // air datepicker
 // init air calendar
@@ -649,9 +654,18 @@ const searchBtn = document.querySelector('.searchBtn');
 const headerFixCloseBtn = document.querySelector('.headerFixCloseBtn');
 let blogSearchBtn = document.querySelector('.blogSearchBtn');
 let blogSearchW = document.querySelector('.blogSearchW');
-let blogSort = document.querySelector('.blogSort');
 
 
+
+
+setTimeout(function () {
+  let blogSort = document.querySelector('.blogSort+.select2');
+  blogSearchBtn?.addEventListener('click', () => {
+    blogSearchBtn.classList.toggle('active');
+    blogSearchW.classList.toggle('active');
+    blogSort.classList.toggle('active');
+  });
+}, 100);
 
 const toggleMenu = function () {
   menu.classList.toggle('active');
@@ -688,11 +702,7 @@ searchBtn?.addEventListener('click', function (e) {
 headerFixCloseBtn?.addEventListener('click', function (e) {
   searchClose();
 });
-blogSearchBtn?.addEventListener('click', () => {
-  blogSearchBtn.classList.toggle('active');
-  blogSearchW.classList.toggle('active');
-  blogSort.classList.toggle('active');
-});
+
 
 function openSearch() {
   let headerSearch = document.querySelector('.headerSearch');
