@@ -332,3 +332,6 @@
     width: 32px;
   }
 }
+.fancybox__backdrop {
+  backdrop-filter: blur(5px);
+}
