@@ -18293,12 +18293,6 @@ h6--sm-h4,
     max-width: 185px;
   }
 }
-@media (max-width: 575px) {
-  .introSlide--first .introSlideContent {
-    padding-bottom: 200px;
-    padding-top: 320px;
-  }
-}
 .introSlide--second .introSlideDescr {
   max-width: 375px;
 }
@@ -20668,10 +20662,6 @@ h6--sm-h4,
     margin-right: auto;
     text-align: center;
   }
-}
-
-.whomCardImg:hover {
-  opacity: 0.8;
 }
 
 .whomCardImg img {
