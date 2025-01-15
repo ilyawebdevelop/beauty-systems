@@ -179,9 +179,10 @@
   &.min-w-unset {
     min-width: unset;
   }
+
   &-md-100 {
-    @media(max-width: 767px){
-      width: 100%!important;
+    @media(max-width: 767px) {
+      width: 100% !important;
     }
   }
 }
@@ -287,11 +288,13 @@
 
 .priceCardBtn {
   width: 50%;
-  @media(max-width: 1400px){
+
+  @media(max-width: 1400px) {
     padding-left: 20px;
     padding-right: 20px;
   }
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     height: 48px;
     font-size: 14px;
   }
@@ -376,36 +379,85 @@
     width: 24px;
   }
 }
+
 .blogSearchBtn {
-  background-color: var(--white-01, rgba(255, 255, 255, 0.10));  
+  background-color: var(--white-01, rgba(255, 255, 255, 0.10));
   background-image: url('@img/icons/search-white.svg');
   background-repeat: no-repeat;
   background-size: 24px;
   background-position: center;
+
   svg {
     fill: #fff;
   }
+
   &.active {
     background-image: url('@img/icons/remove-white.svg');
     background-size: 20px;
   }
 }
+
 .docFinishedCardBtn {
-  @media(max-width: 991px){
+  @media(max-width: 991px) {
     height: 48px;
   }
 }
+
 .docsSeparateBtn {
-  @media(max-width: 991px){
+  @media(max-width: 991px) {
     height: 48px;
   }
 }
+
 .shareBtn {
-  @media(max-width: 575px){
+  @media(max-width: 575px) {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
-.widget-cart-content-btn{
+
+.widget-cart-content-btn {
   min-width: unset;
+}
+
+@keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px;
+  }
+
+  30% {
+    left: 110%;
+    margin-left: 80px;
+  }
+
+  100% {
+    left: 110%;
+    margin-left: 80px;
+  }
+}
+
+.btn-blick {
+  overflow: hidden;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 200px;
+    margin-left: 60px;
+    background: #fff;
+    opacity: 0.5;
+    position: absolute;
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: all 0.1s;
+    animation-name: slideme;
+    animation-duration: 3s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
 }
